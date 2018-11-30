@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/COSA/src" modelPluginID="COSA" modelName="Client_serveur"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>client_serveur.ecore</foreignModel>
+  <genPackages prefix="Client_serveur" disposableProviderFactory="true" ecorePackage="client_serveur.ecore#/">
+    <genClasses ecoreClass="client_serveur.ecore#//Client">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Client/interface_client"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//RPC">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//RPC/interface_rpc"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Client_serveur">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Client_serveur/client"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Client_serveur/rpc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Client_serveur/serveur"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Interface_Client">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Client/port_fourni_client"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Client/port_requis_client"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Interface_RPC">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_RPC/role_fourni_rpc_client"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_RPC/role_requis_rpc_client"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_RPC/role_fourni_rpc_serveur"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_RPC/role_requis_rpc_serveur"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//DataBase">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//DataBase/interface_database"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Interface_DataBase">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_DataBase/port_fourni_db_gamma"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_DataBase/port_requis_gamma_db"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_DataBase/port_fourni_db_beta"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_DataBase/port_requis_beta_db"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Serveur_Comp">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Serveur_Comp/interface_serveur_comp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Serveur_Comp/serveur_conf"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Interface_Serveur_Comp">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Serveur_Comp/port_requis_serveur"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Serveur_Comp/port_fourni_serveur"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Serveur_Comp/port_serveur_comp_serveur_comf"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Serveur_Comp/port_serveur_comp_cm"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Serveur_Conf">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Serveur_Conf/database"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Serveur_Conf/security_manager"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Serveur_Conf/connection_manager"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Serveur_Conf/gamma"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Serveur_Conf/alpha"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Serveur_Conf/beta"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Serveur_Conf/interface_serveur_conf"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Port_Requis_Serveur">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_Requis_Serveur/attachment_rpc_serveur"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Port_Fourni_Serveur">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_Fourni_Serveur/attachement_serveur_rpc"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Role_Requis_RPC_Client">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Role_Requis_RPC_Client/attachment_client_rpc"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Role_Fourni_RPC_Client">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Role_Fourni_RPC_Client/attachment_rpc_client"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Port_Requis_Client">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_Requis_Client/attachment_rpc_client"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Port_Fourni_Client">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_Fourni_Client/attachment_client_rpc"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Attachment_Client_RPC"/>
+    <genClasses ecoreClass="client_serveur.ecore#//Attachment_RPC_Client"/>
+    <genClasses ecoreClass="client_serveur.ecore#//Role_Requis_RPC_Serveur">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Role_Requis_RPC_Serveur/attachement_serveur_rpc"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Role_Fourni_RPC_Serveur">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Role_Fourni_RPC_Serveur/attachment_rpc_serveur"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Attachment_RPC_Serveur"/>
+    <genClasses ecoreClass="client_serveur.ecore#//Attachement_Serveur_RPC"/>
+    <genClasses ecoreClass="client_serveur.ecore#//Security_Manager">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Security_Manager/interface_security_manager"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Connection_Manager">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Connection_Manager/interface_connection_manager"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Interface_Connection_Manager">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Connection_Manager/port_fourni_cm_gamma"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Connection_Manager/port_requis_gamma_cm"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Connection_Manager/port_fourni_cm_alpha"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Connection_Manager/port_requis_alpha_cm"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Connection_Manager/port_cm_serveur_comp"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Interface_Security_Manager">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Security_Manager/port_fourni_sm_beta"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Security_Manager/port_requis_beta_sm"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Security_Manager/port_fourni_sm_alpha"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Security_Manager/port_requis_alpha_sm"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Port_Requis_Alpha_CM">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_Requis_Alpha_CM/attachment_alpha_cm"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Port_Fourni_CM_Alpha">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_Fourni_CM_Alpha/attachment_cm_alpha"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Port_Fourni_CM_Gamma">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_Fourni_CM_Gamma/attachment_cm_gamma"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Port_Requis_Gamma_CM">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_Requis_Gamma_CM/attachment_gamma_cm"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Port_Fourni_DB_Gamma">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_Fourni_DB_Gamma/attachment_db_gamma"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Port_Requis_Gamma_DB">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_Requis_Gamma_DB/attachment_gamma_db"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Port_Fourni_DB_Beta">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_Fourni_DB_Beta/attachment_db_beta"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Port_Requis_Beta_DB">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_Requis_Beta_DB/attachment_beta_db"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Port_Fourni_SM_Alpha">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_Fourni_SM_Alpha/attachment_sm_alpha"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Port_Requis_Alpha_SM">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_Requis_Alpha_SM/attachment_alpha_sm"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Port_Fourni_SM_Beta">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_Fourni_SM_Beta/attachment_sm_beta"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Port_Requis_Beta_SM">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_Requis_Beta_SM/attachment_beta_sm"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Beta">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Beta/interface_beta"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Alpha">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Alpha/interface_alpha"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Gamma">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Gamma/interface_gamma"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Interface_Beta">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Beta/role_fourni_beta_sm"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Beta/role_requis_sm_beta"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Beta/role_requis_db_beta"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Beta/role_fourni_beta_db"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Interface_Alpha">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Alpha/role_fourni_alpha_sm"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Alpha/role_requis_sm_alpha"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Alpha/role_requis_cm_alpha"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Alpha/role_fourni_alpha_cm"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Interface_Gamma">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Gamma/role_requis_cm_gamma"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Gamma/role_fourni_gamma_cm"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Gamma/role_requis_db_gamma"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Gamma/role_fourni_gamma_db"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Role_Requis_SM_Beta">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Role_Requis_SM_Beta/attachment_sm_beta"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Role_Fourni_Beta_SM">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Role_Fourni_Beta_SM/attachment_beta_sm"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Role_Requis_DB_Beta">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Role_Requis_DB_Beta/attachment_db_beta"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Role_Fourni_Beta_DB">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Role_Fourni_Beta_DB/attachment_beta_db"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Role_Fourni_Gamma_CM">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Role_Fourni_Gamma_CM/attachment_gamma_cm"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Role_Requis_CM_Gamma">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Role_Requis_CM_Gamma/attachment_cm_gamma"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Role_Requis_DB_Gamma">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Role_Requis_DB_Gamma/attachment_db_gamma"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Role_Fourni_Gamma_DB">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Role_Fourni_Gamma_DB/attachment_gamma_db"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Role_Requis_SM_Alpha">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Role_Requis_SM_Alpha/attachment_sm_alpha"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Role_Fourni_Alpha_SM">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Role_Fourni_Alpha_SM/attachment_alpha_sm"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Role_Requis_CM_Alpha">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Role_Requis_CM_Alpha/attachment_cm_alpha"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Role_Fourni_Alpha_CM">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Role_Fourni_Alpha_CM/attachment_alpha_cm"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Attachment_SM_Alpha">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_SM_Alpha/port_fourni_sm_alpha"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_SM_Alpha/role_requis_sm_alpha"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Attachment_Alpha_SM">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_Alpha_SM/port_requis_alpha_sm"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_Alpha_SM/role_fourni_alpha_sm"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Attachment_CM_Alpha">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_CM_Alpha/role_requis_cm_alpha"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Attachment_Alpha_CM">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_Alpha_CM/port_requis_alpha_cm"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_Alpha_CM/role_fourni_alpha_cm"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Attachment_SM_Beta">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_SM_Beta/port_fourni_sm_beta"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_SM_Beta/role_requis_sm_beta"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Attachment_Beta_SM">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_Beta_SM/port_requis_beta_sm"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_Beta_SM/role_fourni_beta_sm"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Attachment_DB_Beta">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_DB_Beta/port_fourni_db_beta"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_DB_Beta/role_requis_db_beta"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Attachment_Beta_DB">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_Beta_DB/port_requis_beta_db"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_Beta_DB/role_fourni_beta_db"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Attachment_CM_Gamma">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_CM_Gamma/role_requis_cm_gamma"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_CM_Gamma/port_fourni_cm_gamma"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Attachment_Gamma_CM">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_Gamma_CM/role_fourni_gamma_cm"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_Gamma_CM/port_requis_gamma_cm"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Attachment_DB_Gamma">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_DB_Gamma/role_requis_db_gamma"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_DB_Gamma/port_fourni_db_gamma"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Attachment_Gamma_DB">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_Gamma_DB/role_fourni_gamma_db"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_Gamma_DB/port_requis_gamma_db"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Port_Serveur_Comp_Serveur_Comf">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_Serveur_Comp_Serveur_Comf/binding_serveur_comp_serveur_conf"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Interface_Serveur_Conf">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Interface_Serveur_Conf/port_serveur_conf_serveur_comp"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Port_Serveur_Conf_Serveur_Comp">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_Serveur_Conf_Serveur_Comp/binding_serveur_comp_serveur_conf"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Binding_Serveur_Comp_Serveur_Conf">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Binding_Serveur_Comp_Serveur_Conf/port_serveur_conf_serveur_comp"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Binding_Serveur_Comp_Serveur_Conf/port_serveur_comp_serveur_comf"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Port_CM_Serveur_Comp">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_CM_Serveur_Comp/binding_serveur_comp_cm"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Port_Serveur_Comp_CM">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_Serveur_Comp_CM/binding_serveur_comp_cm"/>
+    </genClasses>
+    <genClasses ecoreClass="client_serveur.ecore#//Binding_Serveur_Comp_CM">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Binding_Serveur_Comp_CM/port_cm_serveur_comp"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Binding_Serveur_Comp_CM/port_serveur_comp_cm"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Cosa" disposableProviderFactory="true" ecorePackage="cosa.ecore#/">
+    <genClasses ecoreClass="cosa.ecore#//Element_Architectural">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cosa.ecore#//Element_Architectural/interface"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cosa.ecore#//Element_Architectural/proprietes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cosa.ecore#//Element_Architectural/contraintes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cosa.ecore#//Element_Architectural/element_architectural"/>
+    </genClasses>
+    <genClasses ecoreClass="cosa.ecore#//Contraintes"/>
+    <genClasses ecoreClass="cosa.ecore#//Proprietes"/>
+    <genClasses ecoreClass="cosa.ecore#//Proprietes_Non_Fonctionnelles"/>
+    <genClasses ecoreClass="cosa.ecore#//Configuration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cosa.ecore#//Configuration/interface_composant"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cosa.ecore#//Configuration/connecteur"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cosa.ecore#//Configuration/composant"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cosa.ecore#//Configuration/binding"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cosa.ecore#//Configuration/attachment"/>
+    </genClasses>
+    <genClasses ecoreClass="cosa.ecore#//Composant">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cosa.ecore#//Composant/interface_composant"/>
+    </genClasses>
+    <genClasses ecoreClass="cosa.ecore#//Connecteur">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cosa.ecore#//Connecteur/glu"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cosa.ecore#//Connecteur/interface_connecteur"/>
+    </genClasses>
+    <genClasses ecoreClass="cosa.ecore#//Interface"/>
+    <genClasses ecoreClass="cosa.ecore#//Proprietes_Fonctionnelles"/>
+    <genClasses ecoreClass="cosa.ecore#//Service">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cosa.ecore#//Service/port"/>
+    </genClasses>
+    <genClasses ecoreClass="cosa.ecore#//Attachment">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cosa.ecore#//Attachment/role"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cosa.ecore#//Attachment/port"/>
+    </genClasses>
+    <genClasses ecoreClass="cosa.ecore#//Role">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cosa.ecore#//Role/attachment_conn"/>
+    </genClasses>
+    <genClasses ecoreClass="cosa.ecore#//Binding">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cosa.ecore#//Binding/port_conf"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cosa.ecore#//Binding/port_comp"/>
+    </genClasses>
+    <genClasses ecoreClass="cosa.ecore#//Port">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cosa.ecore#//Port/attachment_comp"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cosa.ecore#//Port/binding_conf"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cosa.ecore#//Port/binding_comp"/>
+    </genClasses>
+    <genClasses ecoreClass="cosa.ecore#//Glu"/>
+    <genClasses ecoreClass="cosa.ecore#//Interface_Composant"/>
+    <genClasses ecoreClass="cosa.ecore#//Interface_Connecteur"/>
+    <genClasses ecoreClass="cosa.ecore#//Service_Fourni"/>
+    <genClasses ecoreClass="cosa.ecore#//Service_Requis"/>
+    <genClasses ecoreClass="cosa.ecore#//Role_Fourni"/>
+    <genClasses ecoreClass="cosa.ecore#//Role_Requis"/>
+    <genClasses ecoreClass="cosa.ecore#//Port_Requis"/>
+    <genClasses ecoreClass="cosa.ecore#//Port_Fourni"/>
+    <genClasses ecoreClass="cosa.ecore#//Service_Connecteur">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cosa.ecore#//Service_Connecteur/interface_connecteur"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cosa.ecore#//Service_Connecteur/role"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
