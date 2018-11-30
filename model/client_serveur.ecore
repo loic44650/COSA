@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="client_serveur" nsURI="http://www.example.org/client_serveur"
+    nsPrefix="cs">
+  <eClassifiers xsi:type="ecore:EClass" name="Client" eSuperTypes="cosa.ecore#//Composant">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interface_client" upperBound="-1"
+        eType="#//Interface_Client" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RPC" eSuperTypes="cosa.ecore#//Connecteur">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interface_rpc" upperBound="-1"
+        eType="#//Interface_RPC" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Client_serveur" eSuperTypes="cosa.ecore#//Configuration">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="client" upperBound="-1"
+        eType="#//Client" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rpc" upperBound="-1" eType="#//RPC"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="serveur" upperBound="-1"
+        eType="#//Serveur_Comp" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Interface_Client">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="port_fourni_client" upperBound="-1"
+        eType="#//Port_Fourni_Client" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="port_requis_client" upperBound="-1"
+        eType="#//Port_Requis_Client" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Interface_RPC" eSuperTypes="cosa.ecore#//Interface_Connecteur">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="role_fourni_rpc_client"
+        upperBound="-1" eType="#//Role_Fourni_RPC_Client" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="role_requis_rpc_client"
+        upperBound="-1" eType="#//Role_Requis_RPC_Client" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="role_fourni_rpc_serveur"
+        upperBound="-1" eType="#//Role_Fourni_RPC_Serveur" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="role_requis_rpc_serveur"
+        upperBound="-1" eType="#//Role_Requis_RPC_Serveur" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DataBase" eSuperTypes="cosa.ecore#//Composant">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interface_database" upperBound="-1"
+        eType="#//Interface_DataBase" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Interface_DataBase" eSuperTypes="cosa.ecore#//Interface_Composant">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="port_fourni_database" upperBound="-1"
+        eType="#//Port_Fourni_DataBase" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="port_requis_database" upperBound="-1"
+        eType="#//Port_Requis_DataBase" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Port_Requis_DataBase" eSuperTypes="cosa.ecore#//Port_Requis"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Port_Fourni_DataBase" eSuperTypes="cosa.ecore#//Port_Fourni"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Serveur_Comp" eSuperTypes="cosa.ecore#//Composant">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interface_serveur_comp"
+        upperBound="-1" eType="#//Interface_Serveur_Comp" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="serveur_conf" upperBound="-1"
+        eType="#//Serveur_Conf" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Interface_Serveur_Comp" eSuperTypes="cosa.ecore#//Interface_Composant">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="port_requis_serveur" upperBound="-1"
+        eType="#//Port_Requis_Serveur" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="port_fourni_serveur" upperBound="-1"
+        eType="#//Port_Fourni_Serveur" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Serveur_Conf" eSuperTypes="cosa.ecore#//Configuration"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Port_Requis_Serveur" eSuperTypes="cosa.ecore#//Port_Requis">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attachment_rpc_serveur"
+        eType="#//Attachment_RPC_Serveur"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Port_Fourni_Serveur" eSuperTypes="cosa.ecore#//Port_Fourni">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attachement_serveur_rpc"
+        eType="#//Attachement_Serveur_RPC"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Role_Requis_RPC_Client" eSuperTypes="cosa.ecore#//Role_Requis">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attachment_client_rpc"
+        eType="#//Attachment_Client_RPC"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Role_Fourni_RPC_Client" eSuperTypes="cosa.ecore#//Role_Fourni">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attachment_rpc_client"
+        eType="#//Attachment_RPC_Client"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Port_Requis_Client" eSuperTypes="cosa.ecore#//Port_Requis">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attachment_rpc_client"
+        eType="#//Attachment_RPC_Client"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Port_Fourni_Client" eSuperTypes="cosa.ecore#//Port_Fourni">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attachment_client_rpc"
+        eType="#//Attachment_Client_RPC"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Attachment_Client_RPC" eSuperTypes="cosa.ecore#//Attachment"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Attachment_RPC_Client" eSuperTypes="cosa.ecore#//Attachment"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Role_Requis_RPC_Serveur" eSuperTypes="cosa.ecore#//Role_Requis">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attachement_serveur_rpc"
+        eType="#//Attachement_Serveur_RPC"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Role_Fourni_RPC_Serveur" eSuperTypes="cosa.ecore#//Role_Fourni">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attachment_rpc_serveur"
+        eType="#//Attachment_RPC_Serveur"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Attachment_RPC_Serveur" eSuperTypes="cosa.ecore#//Attachment"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Attachement_Serveur_RPC" eSuperTypes="cosa.ecore#//Attachment"/>
+</ecore:EPackage>
