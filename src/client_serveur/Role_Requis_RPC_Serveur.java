@@ -23,6 +23,7 @@ import cosa.Role_Requis;
 public interface Role_Requis_RPC_Serveur extends Role_Requis {
 	/**
 	 * Returns the value of the '<em><b>Attachement serveur rpc</b></em>' reference.
+	 * It is bidirectional and its opposite is '{@link client_serveur.Attachement_Serveur_RPC#getRole_requis_rpc_serveur <em>Role requis rpc serveur</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Attachement serveur rpc</em>' reference isn't clear,
@@ -32,7 +33,8 @@ public interface Role_Requis_RPC_Serveur extends Role_Requis {
 	 * @return the value of the '<em>Attachement serveur rpc</em>' reference.
 	 * @see #setAttachement_serveur_rpc(Attachement_Serveur_RPC)
 	 * @see client_serveur.Client_serveurPackage#getRole_Requis_RPC_Serveur_Attachement_serveur_rpc()
-	 * @model
+	 * @see client_serveur.Attachement_Serveur_RPC#getRole_requis_rpc_serveur
+	 * @model opposite="role_requis_rpc_serveur"
 	 * @generated
 	 */
 	Attachement_Serveur_RPC getAttachement_serveur_rpc();

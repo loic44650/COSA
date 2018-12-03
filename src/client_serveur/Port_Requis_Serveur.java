@@ -23,6 +23,7 @@ import cosa.Port_Requis;
 public interface Port_Requis_Serveur extends Port_Requis {
 	/**
 	 * Returns the value of the '<em><b>Attachment rpc serveur</b></em>' reference.
+	 * It is bidirectional and its opposite is '{@link client_serveur.Attachment_RPC_Serveur#getPort_requis_serveur <em>Port requis serveur</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Attachment rpc serveur</em>' reference isn't clear,
@@ -32,7 +33,8 @@ public interface Port_Requis_Serveur extends Port_Requis {
 	 * @return the value of the '<em>Attachment rpc serveur</em>' reference.
 	 * @see #setAttachment_rpc_serveur(Attachment_RPC_Serveur)
 	 * @see client_serveur.Client_serveurPackage#getPort_Requis_Serveur_Attachment_rpc_serveur()
-	 * @model
+	 * @see client_serveur.Attachment_RPC_Serveur#getPort_requis_serveur
+	 * @model opposite="port_requis_serveur"
 	 * @generated
 	 */
 	Attachment_RPC_Serveur getAttachment_rpc_serveur();

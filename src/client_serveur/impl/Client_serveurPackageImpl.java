@@ -1160,8 +1160,44 @@ public class Client_serveurPackageImpl extends EPackageImpl implements Client_se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getAttachment_Client_RPC_Port_fourni_client() {
+		return (EReference)attachment_Client_RPCEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAttachment_Client_RPC_Role_requis_rpc_client() {
+		return (EReference)attachment_Client_RPCEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getAttachment_RPC_Client() {
 		return attachment_RPC_ClientEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAttachment_RPC_Client_Port_requis_client() {
+		return (EReference)attachment_RPC_ClientEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAttachment_RPC_Client_Role_fourni_rpc_client() {
+		return (EReference)attachment_RPC_ClientEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1214,8 +1250,44 @@ public class Client_serveurPackageImpl extends EPackageImpl implements Client_se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getAttachment_RPC_Serveur_Role_fourni_rpc_serveur() {
+		return (EReference)attachment_RPC_ServeurEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAttachment_RPC_Serveur_Port_requis_serveur() {
+		return (EReference)attachment_RPC_ServeurEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getAttachement_Serveur_RPC() {
 		return attachement_Serveur_RPCEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAttachement_Serveur_RPC_Role_requis_rpc_serveur() {
+		return (EReference)attachement_Serveur_RPCEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAttachement_Serveur_RPC_Port_fourni_serveur() {
+		return (EReference)attachement_Serveur_RPCEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -2529,8 +2601,12 @@ public class Client_serveurPackageImpl extends EPackageImpl implements Client_se
 		createEReference(port_Fourni_ClientEClass, PORT_FOURNI_CLIENT__ATTACHMENT_CLIENT_RPC);
 
 		attachment_Client_RPCEClass = createEClass(ATTACHMENT_CLIENT_RPC);
+		createEReference(attachment_Client_RPCEClass, ATTACHMENT_CLIENT_RPC__PORT_FOURNI_CLIENT);
+		createEReference(attachment_Client_RPCEClass, ATTACHMENT_CLIENT_RPC__ROLE_REQUIS_RPC_CLIENT);
 
 		attachment_RPC_ClientEClass = createEClass(ATTACHMENT_RPC_CLIENT);
+		createEReference(attachment_RPC_ClientEClass, ATTACHMENT_RPC_CLIENT__PORT_REQUIS_CLIENT);
+		createEReference(attachment_RPC_ClientEClass, ATTACHMENT_RPC_CLIENT__ROLE_FOURNI_RPC_CLIENT);
 
 		role_Requis_RPC_ServeurEClass = createEClass(ROLE_REQUIS_RPC_SERVEUR);
 		createEReference(role_Requis_RPC_ServeurEClass, ROLE_REQUIS_RPC_SERVEUR__ATTACHEMENT_SERVEUR_RPC);
@@ -2539,8 +2615,12 @@ public class Client_serveurPackageImpl extends EPackageImpl implements Client_se
 		createEReference(role_Fourni_RPC_ServeurEClass, ROLE_FOURNI_RPC_SERVEUR__ATTACHMENT_RPC_SERVEUR);
 
 		attachment_RPC_ServeurEClass = createEClass(ATTACHMENT_RPC_SERVEUR);
+		createEReference(attachment_RPC_ServeurEClass, ATTACHMENT_RPC_SERVEUR__ROLE_FOURNI_RPC_SERVEUR);
+		createEReference(attachment_RPC_ServeurEClass, ATTACHMENT_RPC_SERVEUR__PORT_REQUIS_SERVEUR);
 
 		attachement_Serveur_RPCEClass = createEClass(ATTACHEMENT_SERVEUR_RPC);
+		createEReference(attachement_Serveur_RPCEClass, ATTACHEMENT_SERVEUR_RPC__ROLE_REQUIS_RPC_SERVEUR);
+		createEReference(attachement_Serveur_RPCEClass, ATTACHEMENT_SERVEUR_RPC__PORT_FOURNI_SERVEUR);
 
 		security_ManagerEClass = createEClass(SECURITY_MANAGER);
 		createEReference(security_ManagerEClass, SECURITY_MANAGER__INTERFACE_SECURITY_MANAGER);
@@ -2888,36 +2968,44 @@ public class Client_serveurPackageImpl extends EPackageImpl implements Client_se
 		initEReference(getServeur_Conf_Interface_serveur_conf(), this.getInterface_Serveur_Conf(), null, "interface_serveur_conf", null, 0, -1, Serveur_Conf.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(port_Requis_ServeurEClass, Port_Requis_Serveur.class, "Port_Requis_Serveur", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getPort_Requis_Serveur_Attachment_rpc_serveur(), this.getAttachment_RPC_Serveur(), null, "attachment_rpc_serveur", null, 0, 1, Port_Requis_Serveur.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPort_Requis_Serveur_Attachment_rpc_serveur(), this.getAttachment_RPC_Serveur(), this.getAttachment_RPC_Serveur_Port_requis_serveur(), "attachment_rpc_serveur", null, 0, 1, Port_Requis_Serveur.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(port_Fourni_ServeurEClass, Port_Fourni_Serveur.class, "Port_Fourni_Serveur", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getPort_Fourni_Serveur_Attachement_serveur_rpc(), this.getAttachement_Serveur_RPC(), null, "attachement_serveur_rpc", null, 0, 1, Port_Fourni_Serveur.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPort_Fourni_Serveur_Attachement_serveur_rpc(), this.getAttachement_Serveur_RPC(), this.getAttachement_Serveur_RPC_Port_fourni_serveur(), "attachement_serveur_rpc", null, 0, 1, Port_Fourni_Serveur.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(role_Requis_RPC_ClientEClass, Role_Requis_RPC_Client.class, "Role_Requis_RPC_Client", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getRole_Requis_RPC_Client_Attachment_client_rpc(), this.getAttachment_Client_RPC(), null, "attachment_client_rpc", null, 0, 1, Role_Requis_RPC_Client.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getRole_Requis_RPC_Client_Attachment_client_rpc(), this.getAttachment_Client_RPC(), this.getAttachment_Client_RPC_Role_requis_rpc_client(), "attachment_client_rpc", null, 0, 1, Role_Requis_RPC_Client.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(role_Fourni_RPC_ClientEClass, Role_Fourni_RPC_Client.class, "Role_Fourni_RPC_Client", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getRole_Fourni_RPC_Client_Attachment_rpc_client(), this.getAttachment_RPC_Client(), null, "attachment_rpc_client", null, 0, 1, Role_Fourni_RPC_Client.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getRole_Fourni_RPC_Client_Attachment_rpc_client(), this.getAttachment_RPC_Client(), this.getAttachment_RPC_Client_Role_fourni_rpc_client(), "attachment_rpc_client", null, 0, 1, Role_Fourni_RPC_Client.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(port_Requis_ClientEClass, Port_Requis_Client.class, "Port_Requis_Client", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getPort_Requis_Client_Attachment_rpc_client(), this.getAttachment_RPC_Client(), null, "attachment_rpc_client", null, 0, 1, Port_Requis_Client.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPort_Requis_Client_Attachment_rpc_client(), this.getAttachment_RPC_Client(), this.getAttachment_RPC_Client_Port_requis_client(), "attachment_rpc_client", null, 0, 1, Port_Requis_Client.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(port_Fourni_ClientEClass, Port_Fourni_Client.class, "Port_Fourni_Client", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getPort_Fourni_Client_Attachment_client_rpc(), this.getAttachment_Client_RPC(), null, "attachment_client_rpc", null, 0, 1, Port_Fourni_Client.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPort_Fourni_Client_Attachment_client_rpc(), this.getAttachment_Client_RPC(), this.getAttachment_Client_RPC_Port_fourni_client(), "attachment_client_rpc", null, 0, 1, Port_Fourni_Client.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(attachment_Client_RPCEClass, Attachment_Client_RPC.class, "Attachment_Client_RPC", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getAttachment_Client_RPC_Port_fourni_client(), this.getPort_Fourni_Client(), this.getPort_Fourni_Client_Attachment_client_rpc(), "port_fourni_client", null, 0, 1, Attachment_Client_RPC.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAttachment_Client_RPC_Role_requis_rpc_client(), this.getRole_Requis_RPC_Client(), this.getRole_Requis_RPC_Client_Attachment_client_rpc(), "role_requis_rpc_client", null, 0, 1, Attachment_Client_RPC.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(attachment_RPC_ClientEClass, Attachment_RPC_Client.class, "Attachment_RPC_Client", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getAttachment_RPC_Client_Port_requis_client(), this.getPort_Requis_Client(), this.getPort_Requis_Client_Attachment_rpc_client(), "port_requis_client", null, 0, 1, Attachment_RPC_Client.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAttachment_RPC_Client_Role_fourni_rpc_client(), this.getRole_Fourni_RPC_Client(), this.getRole_Fourni_RPC_Client_Attachment_rpc_client(), "role_fourni_rpc_client", null, 0, 1, Attachment_RPC_Client.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(role_Requis_RPC_ServeurEClass, Role_Requis_RPC_Serveur.class, "Role_Requis_RPC_Serveur", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getRole_Requis_RPC_Serveur_Attachement_serveur_rpc(), this.getAttachement_Serveur_RPC(), null, "attachement_serveur_rpc", null, 0, 1, Role_Requis_RPC_Serveur.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getRole_Requis_RPC_Serveur_Attachement_serveur_rpc(), this.getAttachement_Serveur_RPC(), this.getAttachement_Serveur_RPC_Role_requis_rpc_serveur(), "attachement_serveur_rpc", null, 0, 1, Role_Requis_RPC_Serveur.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(role_Fourni_RPC_ServeurEClass, Role_Fourni_RPC_Serveur.class, "Role_Fourni_RPC_Serveur", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getRole_Fourni_RPC_Serveur_Attachment_rpc_serveur(), this.getAttachment_RPC_Serveur(), null, "attachment_rpc_serveur", null, 0, 1, Role_Fourni_RPC_Serveur.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getRole_Fourni_RPC_Serveur_Attachment_rpc_serveur(), this.getAttachment_RPC_Serveur(), this.getAttachment_RPC_Serveur_Role_fourni_rpc_serveur(), "attachment_rpc_serveur", null, 0, 1, Role_Fourni_RPC_Serveur.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(attachment_RPC_ServeurEClass, Attachment_RPC_Serveur.class, "Attachment_RPC_Serveur", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getAttachment_RPC_Serveur_Role_fourni_rpc_serveur(), this.getRole_Fourni_RPC_Serveur(), this.getRole_Fourni_RPC_Serveur_Attachment_rpc_serveur(), "role_fourni_rpc_serveur", null, 0, 1, Attachment_RPC_Serveur.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAttachment_RPC_Serveur_Port_requis_serveur(), this.getPort_Requis_Serveur(), this.getPort_Requis_Serveur_Attachment_rpc_serveur(), "port_requis_serveur", null, 0, 1, Attachment_RPC_Serveur.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(attachement_Serveur_RPCEClass, Attachement_Serveur_RPC.class, "Attachement_Serveur_RPC", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getAttachement_Serveur_RPC_Role_requis_rpc_serveur(), this.getRole_Requis_RPC_Serveur(), this.getRole_Requis_RPC_Serveur_Attachement_serveur_rpc(), "role_requis_rpc_serveur", null, 0, 1, Attachement_Serveur_RPC.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAttachement_Serveur_RPC_Port_fourni_serveur(), this.getPort_Fourni_Serveur(), this.getPort_Fourni_Serveur_Attachement_serveur_rpc(), "port_fourni_serveur", null, 0, 1, Attachement_Serveur_RPC.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(security_ManagerEClass, Security_Manager.class, "Security_Manager", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getSecurity_Manager_Interface_security_manager(), this.getInterface_Security_Manager(), null, "interface_security_manager", null, 0, -1, Security_Manager.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

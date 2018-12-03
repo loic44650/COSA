@@ -10,6 +10,7 @@ import cosa.impl.Role_FourniImpl;
 
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
@@ -89,11 +90,63 @@ public class Role_Fourni_RPC_ClientImpl extends Role_FourniImpl implements Role_
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAttachment_rpc_client(Attachment_RPC_Client newAttachment_rpc_client) {
+	public NotificationChain basicSetAttachment_rpc_client(Attachment_RPC_Client newAttachment_rpc_client, NotificationChain msgs) {
 		Attachment_RPC_Client oldAttachment_rpc_client = attachment_rpc_client;
 		attachment_rpc_client = newAttachment_rpc_client;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, Client_serveurPackage.ROLE_FOURNI_RPC_CLIENT__ATTACHMENT_RPC_CLIENT, oldAttachment_rpc_client, attachment_rpc_client));
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, Client_serveurPackage.ROLE_FOURNI_RPC_CLIENT__ATTACHMENT_RPC_CLIENT, oldAttachment_rpc_client, newAttachment_rpc_client);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAttachment_rpc_client(Attachment_RPC_Client newAttachment_rpc_client) {
+		if (newAttachment_rpc_client != attachment_rpc_client) {
+			NotificationChain msgs = null;
+			if (attachment_rpc_client != null)
+				msgs = ((InternalEObject)attachment_rpc_client).eInverseRemove(this, Client_serveurPackage.ATTACHMENT_RPC_CLIENT__ROLE_FOURNI_RPC_CLIENT, Attachment_RPC_Client.class, msgs);
+			if (newAttachment_rpc_client != null)
+				msgs = ((InternalEObject)newAttachment_rpc_client).eInverseAdd(this, Client_serveurPackage.ATTACHMENT_RPC_CLIENT__ROLE_FOURNI_RPC_CLIENT, Attachment_RPC_Client.class, msgs);
+			msgs = basicSetAttachment_rpc_client(newAttachment_rpc_client, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, Client_serveurPackage.ROLE_FOURNI_RPC_CLIENT__ATTACHMENT_RPC_CLIENT, newAttachment_rpc_client, newAttachment_rpc_client));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case Client_serveurPackage.ROLE_FOURNI_RPC_CLIENT__ATTACHMENT_RPC_CLIENT:
+				if (attachment_rpc_client != null)
+					msgs = ((InternalEObject)attachment_rpc_client).eInverseRemove(this, Client_serveurPackage.ATTACHMENT_RPC_CLIENT__ROLE_FOURNI_RPC_CLIENT, Attachment_RPC_Client.class, msgs);
+				return basicSetAttachment_rpc_client((Attachment_RPC_Client)otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case Client_serveurPackage.ROLE_FOURNI_RPC_CLIENT__ATTACHMENT_RPC_CLIENT:
+				return basicSetAttachment_rpc_client(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**

@@ -10,6 +10,7 @@ import cosa.impl.Port_FourniImpl;
 
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
@@ -89,11 +90,63 @@ public class Port_Fourni_ServeurImpl extends Port_FourniImpl implements Port_Fou
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAttachement_serveur_rpc(Attachement_Serveur_RPC newAttachement_serveur_rpc) {
+	public NotificationChain basicSetAttachement_serveur_rpc(Attachement_Serveur_RPC newAttachement_serveur_rpc, NotificationChain msgs) {
 		Attachement_Serveur_RPC oldAttachement_serveur_rpc = attachement_serveur_rpc;
 		attachement_serveur_rpc = newAttachement_serveur_rpc;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, Client_serveurPackage.PORT_FOURNI_SERVEUR__ATTACHEMENT_SERVEUR_RPC, oldAttachement_serveur_rpc, attachement_serveur_rpc));
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, Client_serveurPackage.PORT_FOURNI_SERVEUR__ATTACHEMENT_SERVEUR_RPC, oldAttachement_serveur_rpc, newAttachement_serveur_rpc);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAttachement_serveur_rpc(Attachement_Serveur_RPC newAttachement_serveur_rpc) {
+		if (newAttachement_serveur_rpc != attachement_serveur_rpc) {
+			NotificationChain msgs = null;
+			if (attachement_serveur_rpc != null)
+				msgs = ((InternalEObject)attachement_serveur_rpc).eInverseRemove(this, Client_serveurPackage.ATTACHEMENT_SERVEUR_RPC__PORT_FOURNI_SERVEUR, Attachement_Serveur_RPC.class, msgs);
+			if (newAttachement_serveur_rpc != null)
+				msgs = ((InternalEObject)newAttachement_serveur_rpc).eInverseAdd(this, Client_serveurPackage.ATTACHEMENT_SERVEUR_RPC__PORT_FOURNI_SERVEUR, Attachement_Serveur_RPC.class, msgs);
+			msgs = basicSetAttachement_serveur_rpc(newAttachement_serveur_rpc, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, Client_serveurPackage.PORT_FOURNI_SERVEUR__ATTACHEMENT_SERVEUR_RPC, newAttachement_serveur_rpc, newAttachement_serveur_rpc));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case Client_serveurPackage.PORT_FOURNI_SERVEUR__ATTACHEMENT_SERVEUR_RPC:
+				if (attachement_serveur_rpc != null)
+					msgs = ((InternalEObject)attachement_serveur_rpc).eInverseRemove(this, Client_serveurPackage.ATTACHEMENT_SERVEUR_RPC__PORT_FOURNI_SERVEUR, Attachement_Serveur_RPC.class, msgs);
+				return basicSetAttachement_serveur_rpc((Attachement_Serveur_RPC)otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case Client_serveurPackage.PORT_FOURNI_SERVEUR__ATTACHEMENT_SERVEUR_RPC:
+				return basicSetAttachement_serveur_rpc(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**

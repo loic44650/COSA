@@ -1326,13 +1326,31 @@ public interface Client_serveurPackage extends EPackage {
 	int ATTACHMENT_CLIENT_RPC__PORT = CosaPackage.ATTACHMENT__PORT;
 
 	/**
+	 * The feature id for the '<em><b>Port fourni client</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTACHMENT_CLIENT_RPC__PORT_FOURNI_CLIENT = CosaPackage.ATTACHMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Role requis rpc client</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTACHMENT_CLIENT_RPC__ROLE_REQUIS_RPC_CLIENT = CosaPackage.ATTACHMENT_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>Attachment Client RPC</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ATTACHMENT_CLIENT_RPC_FEATURE_COUNT = CosaPackage.ATTACHMENT_FEATURE_COUNT + 0;
+	int ATTACHMENT_CLIENT_RPC_FEATURE_COUNT = CosaPackage.ATTACHMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Attachment Client RPC</em>' class.
@@ -1372,13 +1390,31 @@ public interface Client_serveurPackage extends EPackage {
 	int ATTACHMENT_RPC_CLIENT__PORT = CosaPackage.ATTACHMENT__PORT;
 
 	/**
+	 * The feature id for the '<em><b>Port requis client</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTACHMENT_RPC_CLIENT__PORT_REQUIS_CLIENT = CosaPackage.ATTACHMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Role fourni rpc client</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTACHMENT_RPC_CLIENT__ROLE_FOURNI_RPC_CLIENT = CosaPackage.ATTACHMENT_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>Attachment RPC Client</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ATTACHMENT_RPC_CLIENT_FEATURE_COUNT = CosaPackage.ATTACHMENT_FEATURE_COUNT + 0;
+	int ATTACHMENT_RPC_CLIENT_FEATURE_COUNT = CosaPackage.ATTACHMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Attachment RPC Client</em>' class.
@@ -1510,13 +1546,31 @@ public interface Client_serveurPackage extends EPackage {
 	int ATTACHMENT_RPC_SERVEUR__PORT = CosaPackage.ATTACHMENT__PORT;
 
 	/**
+	 * The feature id for the '<em><b>Role fourni rpc serveur</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTACHMENT_RPC_SERVEUR__ROLE_FOURNI_RPC_SERVEUR = CosaPackage.ATTACHMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Port requis serveur</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTACHMENT_RPC_SERVEUR__PORT_REQUIS_SERVEUR = CosaPackage.ATTACHMENT_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>Attachment RPC Serveur</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ATTACHMENT_RPC_SERVEUR_FEATURE_COUNT = CosaPackage.ATTACHMENT_FEATURE_COUNT + 0;
+	int ATTACHMENT_RPC_SERVEUR_FEATURE_COUNT = CosaPackage.ATTACHMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Attachment RPC Serveur</em>' class.
@@ -1556,13 +1610,31 @@ public interface Client_serveurPackage extends EPackage {
 	int ATTACHEMENT_SERVEUR_RPC__PORT = CosaPackage.ATTACHMENT__PORT;
 
 	/**
+	 * The feature id for the '<em><b>Role requis rpc serveur</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTACHEMENT_SERVEUR_RPC__ROLE_REQUIS_RPC_SERVEUR = CosaPackage.ATTACHMENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Port fourni serveur</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTACHEMENT_SERVEUR_RPC__PORT_FOURNI_SERVEUR = CosaPackage.ATTACHMENT_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>Attachement Serveur RPC</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ATTACHEMENT_SERVEUR_RPC_FEATURE_COUNT = CosaPackage.ATTACHMENT_FEATURE_COUNT + 0;
+	int ATTACHEMENT_SERVEUR_RPC_FEATURE_COUNT = CosaPackage.ATTACHMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Attachement Serveur RPC</em>' class.
@@ -5396,6 +5468,28 @@ public interface Client_serveurPackage extends EPackage {
 	EClass getAttachment_Client_RPC();
 
 	/**
+	 * Returns the meta object for the reference '{@link client_serveur.Attachment_Client_RPC#getPort_fourni_client <em>Port fourni client</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Port fourni client</em>'.
+	 * @see client_serveur.Attachment_Client_RPC#getPort_fourni_client()
+	 * @see #getAttachment_Client_RPC()
+	 * @generated
+	 */
+	EReference getAttachment_Client_RPC_Port_fourni_client();
+
+	/**
+	 * Returns the meta object for the reference '{@link client_serveur.Attachment_Client_RPC#getRole_requis_rpc_client <em>Role requis rpc client</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Role requis rpc client</em>'.
+	 * @see client_serveur.Attachment_Client_RPC#getRole_requis_rpc_client()
+	 * @see #getAttachment_Client_RPC()
+	 * @generated
+	 */
+	EReference getAttachment_Client_RPC_Role_requis_rpc_client();
+
+	/**
 	 * Returns the meta object for class '{@link client_serveur.Attachment_RPC_Client <em>Attachment RPC Client</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5404,6 +5498,28 @@ public interface Client_serveurPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getAttachment_RPC_Client();
+
+	/**
+	 * Returns the meta object for the reference '{@link client_serveur.Attachment_RPC_Client#getPort_requis_client <em>Port requis client</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Port requis client</em>'.
+	 * @see client_serveur.Attachment_RPC_Client#getPort_requis_client()
+	 * @see #getAttachment_RPC_Client()
+	 * @generated
+	 */
+	EReference getAttachment_RPC_Client_Port_requis_client();
+
+	/**
+	 * Returns the meta object for the reference '{@link client_serveur.Attachment_RPC_Client#getRole_fourni_rpc_client <em>Role fourni rpc client</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Role fourni rpc client</em>'.
+	 * @see client_serveur.Attachment_RPC_Client#getRole_fourni_rpc_client()
+	 * @see #getAttachment_RPC_Client()
+	 * @generated
+	 */
+	EReference getAttachment_RPC_Client_Role_fourni_rpc_client();
 
 	/**
 	 * Returns the meta object for class '{@link client_serveur.Role_Requis_RPC_Serveur <em>Role Requis RPC Serveur</em>}'.
@@ -5458,6 +5574,28 @@ public interface Client_serveurPackage extends EPackage {
 	EClass getAttachment_RPC_Serveur();
 
 	/**
+	 * Returns the meta object for the reference '{@link client_serveur.Attachment_RPC_Serveur#getRole_fourni_rpc_serveur <em>Role fourni rpc serveur</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Role fourni rpc serveur</em>'.
+	 * @see client_serveur.Attachment_RPC_Serveur#getRole_fourni_rpc_serveur()
+	 * @see #getAttachment_RPC_Serveur()
+	 * @generated
+	 */
+	EReference getAttachment_RPC_Serveur_Role_fourni_rpc_serveur();
+
+	/**
+	 * Returns the meta object for the reference '{@link client_serveur.Attachment_RPC_Serveur#getPort_requis_serveur <em>Port requis serveur</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Port requis serveur</em>'.
+	 * @see client_serveur.Attachment_RPC_Serveur#getPort_requis_serveur()
+	 * @see #getAttachment_RPC_Serveur()
+	 * @generated
+	 */
+	EReference getAttachment_RPC_Serveur_Port_requis_serveur();
+
+	/**
 	 * Returns the meta object for class '{@link client_serveur.Attachement_Serveur_RPC <em>Attachement Serveur RPC</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5466,6 +5604,28 @@ public interface Client_serveurPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getAttachement_Serveur_RPC();
+
+	/**
+	 * Returns the meta object for the reference '{@link client_serveur.Attachement_Serveur_RPC#getRole_requis_rpc_serveur <em>Role requis rpc serveur</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Role requis rpc serveur</em>'.
+	 * @see client_serveur.Attachement_Serveur_RPC#getRole_requis_rpc_serveur()
+	 * @see #getAttachement_Serveur_RPC()
+	 * @generated
+	 */
+	EReference getAttachement_Serveur_RPC_Role_requis_rpc_serveur();
+
+	/**
+	 * Returns the meta object for the reference '{@link client_serveur.Attachement_Serveur_RPC#getPort_fourni_serveur <em>Port fourni serveur</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Port fourni serveur</em>'.
+	 * @see client_serveur.Attachement_Serveur_RPC#getPort_fourni_serveur()
+	 * @see #getAttachement_Serveur_RPC()
+	 * @generated
+	 */
+	EReference getAttachement_Serveur_RPC_Port_fourni_serveur();
 
 	/**
 	 * Returns the meta object for class '{@link client_serveur.Security_Manager <em>Security Manager</em>}'.
@@ -7373,6 +7533,22 @@ public interface Client_serveurPackage extends EPackage {
 		EClass ATTACHMENT_CLIENT_RPC = eINSTANCE.getAttachment_Client_RPC();
 
 		/**
+		 * The meta object literal for the '<em><b>Port fourni client</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ATTACHMENT_CLIENT_RPC__PORT_FOURNI_CLIENT = eINSTANCE.getAttachment_Client_RPC_Port_fourni_client();
+
+		/**
+		 * The meta object literal for the '<em><b>Role requis rpc client</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ATTACHMENT_CLIENT_RPC__ROLE_REQUIS_RPC_CLIENT = eINSTANCE.getAttachment_Client_RPC_Role_requis_rpc_client();
+
+		/**
 		 * The meta object literal for the '{@link client_serveur.impl.Attachment_RPC_ClientImpl <em>Attachment RPC Client</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -7381,6 +7557,22 @@ public interface Client_serveurPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ATTACHMENT_RPC_CLIENT = eINSTANCE.getAttachment_RPC_Client();
+
+		/**
+		 * The meta object literal for the '<em><b>Port requis client</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ATTACHMENT_RPC_CLIENT__PORT_REQUIS_CLIENT = eINSTANCE.getAttachment_RPC_Client_Port_requis_client();
+
+		/**
+		 * The meta object literal for the '<em><b>Role fourni rpc client</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ATTACHMENT_RPC_CLIENT__ROLE_FOURNI_RPC_CLIENT = eINSTANCE.getAttachment_RPC_Client_Role_fourni_rpc_client();
 
 		/**
 		 * The meta object literal for the '{@link client_serveur.impl.Role_Requis_RPC_ServeurImpl <em>Role Requis RPC Serveur</em>}' class.
@@ -7429,6 +7621,22 @@ public interface Client_serveurPackage extends EPackage {
 		EClass ATTACHMENT_RPC_SERVEUR = eINSTANCE.getAttachment_RPC_Serveur();
 
 		/**
+		 * The meta object literal for the '<em><b>Role fourni rpc serveur</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ATTACHMENT_RPC_SERVEUR__ROLE_FOURNI_RPC_SERVEUR = eINSTANCE.getAttachment_RPC_Serveur_Role_fourni_rpc_serveur();
+
+		/**
+		 * The meta object literal for the '<em><b>Port requis serveur</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ATTACHMENT_RPC_SERVEUR__PORT_REQUIS_SERVEUR = eINSTANCE.getAttachment_RPC_Serveur_Port_requis_serveur();
+
+		/**
 		 * The meta object literal for the '{@link client_serveur.impl.Attachement_Serveur_RPCImpl <em>Attachement Serveur RPC</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -7437,6 +7645,22 @@ public interface Client_serveurPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ATTACHEMENT_SERVEUR_RPC = eINSTANCE.getAttachement_Serveur_RPC();
+
+		/**
+		 * The meta object literal for the '<em><b>Role requis rpc serveur</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ATTACHEMENT_SERVEUR_RPC__ROLE_REQUIS_RPC_SERVEUR = eINSTANCE.getAttachement_Serveur_RPC_Role_requis_rpc_serveur();
+
+		/**
+		 * The meta object literal for the '<em><b>Port fourni serveur</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ATTACHEMENT_SERVEUR_RPC__PORT_FOURNI_SERVEUR = eINSTANCE.getAttachement_Serveur_RPC_Port_fourni_serveur();
 
 		/**
 		 * The meta object literal for the '{@link client_serveur.impl.Security_ManagerImpl <em>Security Manager</em>}' class.

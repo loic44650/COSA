@@ -23,6 +23,7 @@ import cosa.Role_Fourni;
 public interface Role_Fourni_RPC_Serveur extends Role_Fourni {
 	/**
 	 * Returns the value of the '<em><b>Attachment rpc serveur</b></em>' reference.
+	 * It is bidirectional and its opposite is '{@link client_serveur.Attachment_RPC_Serveur#getRole_fourni_rpc_serveur <em>Role fourni rpc serveur</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Attachment rpc serveur</em>' reference isn't clear,
@@ -32,7 +33,8 @@ public interface Role_Fourni_RPC_Serveur extends Role_Fourni {
 	 * @return the value of the '<em>Attachment rpc serveur</em>' reference.
 	 * @see #setAttachment_rpc_serveur(Attachment_RPC_Serveur)
 	 * @see client_serveur.Client_serveurPackage#getRole_Fourni_RPC_Serveur_Attachment_rpc_serveur()
-	 * @model
+	 * @see client_serveur.Attachment_RPC_Serveur#getRole_fourni_rpc_serveur
+	 * @model opposite="role_fourni_rpc_serveur"
 	 * @generated
 	 */
 	Attachment_RPC_Serveur getAttachment_rpc_serveur();

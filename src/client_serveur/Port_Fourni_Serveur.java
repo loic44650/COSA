@@ -23,6 +23,7 @@ import cosa.Port_Fourni;
 public interface Port_Fourni_Serveur extends Port_Fourni {
 	/**
 	 * Returns the value of the '<em><b>Attachement serveur rpc</b></em>' reference.
+	 * It is bidirectional and its opposite is '{@link client_serveur.Attachement_Serveur_RPC#getPort_fourni_serveur <em>Port fourni serveur</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Attachement serveur rpc</em>' reference isn't clear,
@@ -32,7 +33,8 @@ public interface Port_Fourni_Serveur extends Port_Fourni {
 	 * @return the value of the '<em>Attachement serveur rpc</em>' reference.
 	 * @see #setAttachement_serveur_rpc(Attachement_Serveur_RPC)
 	 * @see client_serveur.Client_serveurPackage#getPort_Fourni_Serveur_Attachement_serveur_rpc()
-	 * @model
+	 * @see client_serveur.Attachement_Serveur_RPC#getPort_fourni_serveur
+	 * @model opposite="port_fourni_serveur"
 	 * @generated
 	 */
 	Attachement_Serveur_RPC getAttachement_serveur_rpc();
