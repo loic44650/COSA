@@ -1,0 +1,158 @@
+/**
+ */
+package client_serveur.impl;
+
+import client_serveur.Attachment_Client_RPC;
+import client_serveur.Client_serveurPackage;
+import client_serveur.Role_Requis_RPC_Client;
+
+import cosa.impl.Role_RequisImpl;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Role Requis RPC Client</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link client_serveur.impl.Role_Requis_RPC_ClientImpl#getAttachment_client_rpc <em>Attachment client rpc</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class Role_Requis_RPC_ClientImpl extends Role_RequisImpl implements Role_Requis_RPC_Client {
+	/**
+	 * The cached value of the '{@link #getAttachment_client_rpc() <em>Attachment client rpc</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAttachment_client_rpc()
+	 * @generated
+	 * @ordered
+	 */
+	protected Attachment_Client_RPC attachment_client_rpc;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected Role_Requis_RPC_ClientImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return Client_serveurPackage.Literals.ROLE_REQUIS_RPC_CLIENT;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Attachment_Client_RPC getAttachment_client_rpc() {
+		if (attachment_client_rpc != null && attachment_client_rpc.eIsProxy()) {
+			InternalEObject oldAttachment_client_rpc = (InternalEObject)attachment_client_rpc;
+			attachment_client_rpc = (Attachment_Client_RPC)eResolveProxy(oldAttachment_client_rpc);
+			if (attachment_client_rpc != oldAttachment_client_rpc) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, Client_serveurPackage.ROLE_REQUIS_RPC_CLIENT__ATTACHMENT_CLIENT_RPC, oldAttachment_client_rpc, attachment_client_rpc));
+			}
+		}
+		return attachment_client_rpc;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Attachment_Client_RPC basicGetAttachment_client_rpc() {
+		return attachment_client_rpc;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAttachment_client_rpc(Attachment_Client_RPC newAttachment_client_rpc) {
+		Attachment_Client_RPC oldAttachment_client_rpc = attachment_client_rpc;
+		attachment_client_rpc = newAttachment_client_rpc;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, Client_serveurPackage.ROLE_REQUIS_RPC_CLIENT__ATTACHMENT_CLIENT_RPC, oldAttachment_client_rpc, attachment_client_rpc));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case Client_serveurPackage.ROLE_REQUIS_RPC_CLIENT__ATTACHMENT_CLIENT_RPC:
+				if (resolve) return getAttachment_client_rpc();
+				return basicGetAttachment_client_rpc();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case Client_serveurPackage.ROLE_REQUIS_RPC_CLIENT__ATTACHMENT_CLIENT_RPC:
+				setAttachment_client_rpc((Attachment_Client_RPC)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case Client_serveurPackage.ROLE_REQUIS_RPC_CLIENT__ATTACHMENT_CLIENT_RPC:
+				setAttachment_client_rpc((Attachment_Client_RPC)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case Client_serveurPackage.ROLE_REQUIS_RPC_CLIENT__ATTACHMENT_CLIENT_RPC:
+				return attachment_client_rpc != null;
+		}
+		return super.eIsSet(featureID);
+	}
+
+} //Role_Requis_RPC_ClientImpl

@@ -1,0 +1,211 @@
+/**
+ */
+package client_serveur.impl;
+
+import client_serveur.Attachment_CM_Alpha;
+import client_serveur.Client_serveurPackage;
+import client_serveur.Role_Requis_CM_Alpha;
+
+import cosa.impl.Role_RequisImpl;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Role Requis CM Alpha</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link client_serveur.impl.Role_Requis_CM_AlphaImpl#getAttachment_cm_alpha <em>Attachment cm alpha</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class Role_Requis_CM_AlphaImpl extends Role_RequisImpl implements Role_Requis_CM_Alpha {
+	/**
+	 * The cached value of the '{@link #getAttachment_cm_alpha() <em>Attachment cm alpha</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAttachment_cm_alpha()
+	 * @generated
+	 * @ordered
+	 */
+	protected Attachment_CM_Alpha attachment_cm_alpha;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected Role_Requis_CM_AlphaImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return Client_serveurPackage.Literals.ROLE_REQUIS_CM_ALPHA;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Attachment_CM_Alpha getAttachment_cm_alpha() {
+		if (attachment_cm_alpha != null && attachment_cm_alpha.eIsProxy()) {
+			InternalEObject oldAttachment_cm_alpha = (InternalEObject)attachment_cm_alpha;
+			attachment_cm_alpha = (Attachment_CM_Alpha)eResolveProxy(oldAttachment_cm_alpha);
+			if (attachment_cm_alpha != oldAttachment_cm_alpha) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, Client_serveurPackage.ROLE_REQUIS_CM_ALPHA__ATTACHMENT_CM_ALPHA, oldAttachment_cm_alpha, attachment_cm_alpha));
+			}
+		}
+		return attachment_cm_alpha;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Attachment_CM_Alpha basicGetAttachment_cm_alpha() {
+		return attachment_cm_alpha;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetAttachment_cm_alpha(Attachment_CM_Alpha newAttachment_cm_alpha, NotificationChain msgs) {
+		Attachment_CM_Alpha oldAttachment_cm_alpha = attachment_cm_alpha;
+		attachment_cm_alpha = newAttachment_cm_alpha;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, Client_serveurPackage.ROLE_REQUIS_CM_ALPHA__ATTACHMENT_CM_ALPHA, oldAttachment_cm_alpha, newAttachment_cm_alpha);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAttachment_cm_alpha(Attachment_CM_Alpha newAttachment_cm_alpha) {
+		if (newAttachment_cm_alpha != attachment_cm_alpha) {
+			NotificationChain msgs = null;
+			if (attachment_cm_alpha != null)
+				msgs = ((InternalEObject)attachment_cm_alpha).eInverseRemove(this, Client_serveurPackage.ATTACHMENT_CM_ALPHA__ROLE_REQUIS_CM_ALPHA, Attachment_CM_Alpha.class, msgs);
+			if (newAttachment_cm_alpha != null)
+				msgs = ((InternalEObject)newAttachment_cm_alpha).eInverseAdd(this, Client_serveurPackage.ATTACHMENT_CM_ALPHA__ROLE_REQUIS_CM_ALPHA, Attachment_CM_Alpha.class, msgs);
+			msgs = basicSetAttachment_cm_alpha(newAttachment_cm_alpha, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, Client_serveurPackage.ROLE_REQUIS_CM_ALPHA__ATTACHMENT_CM_ALPHA, newAttachment_cm_alpha, newAttachment_cm_alpha));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case Client_serveurPackage.ROLE_REQUIS_CM_ALPHA__ATTACHMENT_CM_ALPHA:
+				if (attachment_cm_alpha != null)
+					msgs = ((InternalEObject)attachment_cm_alpha).eInverseRemove(this, Client_serveurPackage.ATTACHMENT_CM_ALPHA__ROLE_REQUIS_CM_ALPHA, Attachment_CM_Alpha.class, msgs);
+				return basicSetAttachment_cm_alpha((Attachment_CM_Alpha)otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case Client_serveurPackage.ROLE_REQUIS_CM_ALPHA__ATTACHMENT_CM_ALPHA:
+				return basicSetAttachment_cm_alpha(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case Client_serveurPackage.ROLE_REQUIS_CM_ALPHA__ATTACHMENT_CM_ALPHA:
+				if (resolve) return getAttachment_cm_alpha();
+				return basicGetAttachment_cm_alpha();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case Client_serveurPackage.ROLE_REQUIS_CM_ALPHA__ATTACHMENT_CM_ALPHA:
+				setAttachment_cm_alpha((Attachment_CM_Alpha)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case Client_serveurPackage.ROLE_REQUIS_CM_ALPHA__ATTACHMENT_CM_ALPHA:
+				setAttachment_cm_alpha((Attachment_CM_Alpha)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case Client_serveurPackage.ROLE_REQUIS_CM_ALPHA__ATTACHMENT_CM_ALPHA:
+				return attachment_cm_alpha != null;
+		}
+		return super.eIsSet(featureID);
+	}
+
+} //Role_Requis_CM_AlphaImpl
