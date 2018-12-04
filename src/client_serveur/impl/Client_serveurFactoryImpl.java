@@ -77,7 +77,7 @@ public class Client_serveurFactoryImpl extends EFactoryImpl implements Client_se
 			case Client_serveurPackage.ROLE_REQUIS_RPC_SERVEUR: return createRole_Requis_RPC_Serveur();
 			case Client_serveurPackage.ROLE_FOURNI_RPC_SERVEUR: return createRole_Fourni_RPC_Serveur();
 			case Client_serveurPackage.ATTACHMENT_RPC_SERVEUR: return createAttachment_RPC_Serveur();
-			case Client_serveurPackage.ATTACHEMENT_SERVEUR_RPC: return createAttachement_Serveur_RPC();
+			case Client_serveurPackage.ATTACHMENT_SERVEUR_RPC: return createAttachment_Serveur_RPC();
 			case Client_serveurPackage.SECURITY_MANAGER: return createSecurity_Manager();
 			case Client_serveurPackage.CONNECTION_MANAGER: return createConnection_Manager();
 			case Client_serveurPackage.INTERFACE_CONNECTION_MANAGER: return createInterface_Connection_Manager();
@@ -351,9 +351,9 @@ public class Client_serveurFactoryImpl extends EFactoryImpl implements Client_se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Attachement_Serveur_RPC createAttachement_Serveur_RPC() {
-		Attachement_Serveur_RPCImpl attachement_Serveur_RPC = new Attachement_Serveur_RPCImpl();
-		return attachement_Serveur_RPC;
+	public Attachment_Serveur_RPC createAttachment_Serveur_RPC() {
+		Attachment_Serveur_RPCImpl attachment_Serveur_RPC = new Attachment_Serveur_RPCImpl();
+		return attachment_Serveur_RPC;
 	}
 
 	/**

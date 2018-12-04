@@ -211,13 +211,13 @@ public interface Client_serveurFactory extends EFactory {
 	Attachment_RPC_Serveur createAttachment_RPC_Serveur();
 
 	/**
-	 * Returns a new object of class '<em>Attachement Serveur RPC</em>'.
+	 * Returns a new object of class '<em>Attachment Serveur RPC</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Attachement Serveur RPC</em>'.
+	 * @return a new object of class '<em>Attachment Serveur RPC</em>'.
 	 * @generated
 	 */
-	Attachement_Serveur_RPC createAttachement_Serveur_RPC();
+	Attachment_Serveur_RPC createAttachment_Serveur_RPC();
 
 	/**
 	 * Returns a new object of class '<em>Security Manager</em>'.

@@ -9,8 +9,8 @@ import client_serveur.Port_Fourni_Client;
 import cosa.impl.Port_FourniImpl;
 
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.notify.NotificationChain;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 

@@ -168,8 +168,8 @@ public class Client_serveurAdapterFactory extends AdapterFactoryImpl {
 				return createAttachment_RPC_ServeurAdapter();
 			}
 			@Override
-			public Adapter caseAttachement_Serveur_RPC(Attachement_Serveur_RPC object) {
-				return createAttachement_Serveur_RPCAdapter();
+			public Adapter caseAttachment_Serveur_RPC(Attachment_Serveur_RPC object) {
+				return createAttachment_Serveur_RPCAdapter();
 			}
 			@Override
 			public Adapter caseSecurity_Manager(Security_Manager object) {
@@ -758,16 +758,16 @@ public class Client_serveurAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link client_serveur.Attachement_Serveur_RPC <em>Attachement Serveur RPC</em>}'.
+	 * Creates a new adapter for an object of class '{@link client_serveur.Attachment_Serveur_RPC <em>Attachment Serveur RPC</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see client_serveur.Attachement_Serveur_RPC
+	 * @see client_serveur.Attachment_Serveur_RPC
 	 * @generated
 	 */
-	public Adapter createAttachement_Serveur_RPCAdapter() {
+	public Adapter createAttachment_Serveur_RPCAdapter() {
 		return null;
 	}
 

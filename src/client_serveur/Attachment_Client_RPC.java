@@ -22,7 +22,6 @@ import cosa.Attachment;
  * @generated
  */
 public interface Attachment_Client_RPC extends Attachment {
-
 	/**
 	 * Returns the value of the '<em><b>Port fourni client</b></em>' reference.
 	 * It is bidirectional and its opposite is '{@link client_serveur.Port_Fourni_Client#getAttachment_client_rpc <em>Attachment client rpc</em>}'.
@@ -78,4 +77,5 @@ public interface Attachment_Client_RPC extends Attachment {
 	 * @generated
 	 */
 	void setRole_requis_rpc_client(Role_Requis_RPC_Client value);
+
 } // Attachment_Client_RPC

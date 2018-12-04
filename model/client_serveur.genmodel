@@ -58,7 +58,7 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_Requis_Serveur/attachment_rpc_serveur"/>
     </genClasses>
     <genClasses ecoreClass="client_serveur.ecore#//Port_Fourni_Serveur">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_Fourni_Serveur/attachement_serveur_rpc"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Port_Fourni_Serveur/attachment_serveur_rpc"/>
     </genClasses>
     <genClasses ecoreClass="client_serveur.ecore#//Role_Requis_RPC_Client">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Role_Requis_RPC_Client/attachment_client_rpc"/>
@@ -81,7 +81,7 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_RPC_Client/role_fourni_rpc_client"/>
     </genClasses>
     <genClasses ecoreClass="client_serveur.ecore#//Role_Requis_RPC_Serveur">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Role_Requis_RPC_Serveur/attachement_serveur_rpc"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Role_Requis_RPC_Serveur/attachment_serveur_rpc"/>
     </genClasses>
     <genClasses ecoreClass="client_serveur.ecore#//Role_Fourni_RPC_Serveur">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Role_Fourni_RPC_Serveur/attachment_rpc_serveur"/>
@@ -90,9 +90,9 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_RPC_Serveur/role_fourni_rpc_serveur"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_RPC_Serveur/port_requis_serveur"/>
     </genClasses>
-    <genClasses ecoreClass="client_serveur.ecore#//Attachement_Serveur_RPC">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachement_Serveur_RPC/role_requis_rpc_serveur"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachement_Serveur_RPC/port_fourni_serveur"/>
+    <genClasses ecoreClass="client_serveur.ecore#//Attachment_Serveur_RPC">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_Serveur_RPC/port_fourni_serveur"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Attachment_Serveur_RPC/role_requis_rpc_serveur"/>
     </genClasses>
     <genClasses ecoreClass="client_serveur.ecore#//Security_Manager">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference client_serveur.ecore#//Security_Manager/interface_security_manager"/>

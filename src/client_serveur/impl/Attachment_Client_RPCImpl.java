@@ -4,15 +4,17 @@ package client_serveur.impl;
 
 import client_serveur.Attachment_Client_RPC;
 import client_serveur.Client_serveurPackage;
-
 import client_serveur.Port_Fourni_Client;
 import client_serveur.Role_Requis_RPC_Client;
+
 import cosa.impl.AttachmentImpl;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
+
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
@@ -39,6 +41,7 @@ public class Attachment_Client_RPCImpl extends AttachmentImpl implements Attachm
 	 * @ordered
 	 */
 	protected Port_Fourni_Client port_fourni_client;
+
 	/**
 	 * The cached value of the '{@link #getRole_requis_rpc_client() <em>Role requis rpc client</em>}' reference.
 	 * <!-- begin-user-doc -->

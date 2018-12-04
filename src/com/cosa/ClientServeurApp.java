@@ -60,9 +60,9 @@ public class ClientServeurApp extends Client_serveurImpl{
 		rpc.getInterface_rpc().get(0).getRole_fourni_rpc_client().get(0).setAttachment_rpc_client(arpcc);
 		
 		//Attachments Serveur-->RPC
-		Attachement_Serveur_RPC asrpc = csf.createAttachement_Serveur_RPC();
-		serveur.getInterface_serveur_comp().get(0).getPort_fourni_serveur().get(0).setAttachement_serveur_rpc(asrpc);
-		rpc.getInterface_rpc().get(0).getRole_requis_rpc_serveur().get(0).setAttachement_serveur_rpc(asrpc);
+		Attachment_Serveur_RPC asrpc = csf.createAttachment_Serveur_RPC();
+		serveur.getInterface_serveur_comp().get(0).getPort_fourni_serveur().get(0).setAttachment_serveur_rpc(asrpc);
+		rpc.getInterface_rpc().get(0).getRole_requis_rpc_serveur().get(0).setAttachment_serveur_rpc(asrpc);
 		
 		//Attachments RPC-->Serveur
 		Attachment_RPC_Serveur arpcs = csf.createAttachment_RPC_Serveur();

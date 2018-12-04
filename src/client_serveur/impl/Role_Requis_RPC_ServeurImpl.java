@@ -2,15 +2,15 @@
  */
 package client_serveur.impl;
 
-import client_serveur.Attachement_Serveur_RPC;
+import client_serveur.Attachment_Serveur_RPC;
 import client_serveur.Client_serveurPackage;
 import client_serveur.Role_Requis_RPC_Serveur;
 
 import cosa.impl.Role_RequisImpl;
 
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.notify.NotificationChain;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
@@ -24,21 +24,21 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link client_serveur.impl.Role_Requis_RPC_ServeurImpl#getAttachement_serveur_rpc <em>Attachement serveur rpc</em>}</li>
+ *   <li>{@link client_serveur.impl.Role_Requis_RPC_ServeurImpl#getAttachment_serveur_rpc <em>Attachment serveur rpc</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class Role_Requis_RPC_ServeurImpl extends Role_RequisImpl implements Role_Requis_RPC_Serveur {
 	/**
-	 * The cached value of the '{@link #getAttachement_serveur_rpc() <em>Attachement serveur rpc</em>}' reference.
+	 * The cached value of the '{@link #getAttachment_serveur_rpc() <em>Attachment serveur rpc</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAttachement_serveur_rpc()
+	 * @see #getAttachment_serveur_rpc()
 	 * @generated
 	 * @ordered
 	 */
-	protected Attachement_Serveur_RPC attachement_serveur_rpc;
+	protected Attachment_Serveur_RPC attachment_serveur_rpc;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -64,16 +64,16 @@ public class Role_Requis_RPC_ServeurImpl extends Role_RequisImpl implements Role
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Attachement_Serveur_RPC getAttachement_serveur_rpc() {
-		if (attachement_serveur_rpc != null && attachement_serveur_rpc.eIsProxy()) {
-			InternalEObject oldAttachement_serveur_rpc = (InternalEObject)attachement_serveur_rpc;
-			attachement_serveur_rpc = (Attachement_Serveur_RPC)eResolveProxy(oldAttachement_serveur_rpc);
-			if (attachement_serveur_rpc != oldAttachement_serveur_rpc) {
+	public Attachment_Serveur_RPC getAttachment_serveur_rpc() {
+		if (attachment_serveur_rpc != null && attachment_serveur_rpc.eIsProxy()) {
+			InternalEObject oldAttachment_serveur_rpc = (InternalEObject)attachment_serveur_rpc;
+			attachment_serveur_rpc = (Attachment_Serveur_RPC)eResolveProxy(oldAttachment_serveur_rpc);
+			if (attachment_serveur_rpc != oldAttachment_serveur_rpc) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, Client_serveurPackage.ROLE_REQUIS_RPC_SERVEUR__ATTACHEMENT_SERVEUR_RPC, oldAttachement_serveur_rpc, attachement_serveur_rpc));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, Client_serveurPackage.ROLE_REQUIS_RPC_SERVEUR__ATTACHMENT_SERVEUR_RPC, oldAttachment_serveur_rpc, attachment_serveur_rpc));
 			}
 		}
-		return attachement_serveur_rpc;
+		return attachment_serveur_rpc;
 	}
 
 	/**
@@ -81,8 +81,8 @@ public class Role_Requis_RPC_ServeurImpl extends Role_RequisImpl implements Role
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Attachement_Serveur_RPC basicGetAttachement_serveur_rpc() {
-		return attachement_serveur_rpc;
+	public Attachment_Serveur_RPC basicGetAttachment_serveur_rpc() {
+		return attachment_serveur_rpc;
 	}
 
 	/**
@@ -90,11 +90,11 @@ public class Role_Requis_RPC_ServeurImpl extends Role_RequisImpl implements Role
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAttachement_serveur_rpc(Attachement_Serveur_RPC newAttachement_serveur_rpc, NotificationChain msgs) {
-		Attachement_Serveur_RPC oldAttachement_serveur_rpc = attachement_serveur_rpc;
-		attachement_serveur_rpc = newAttachement_serveur_rpc;
+	public NotificationChain basicSetAttachment_serveur_rpc(Attachment_Serveur_RPC newAttachment_serveur_rpc, NotificationChain msgs) {
+		Attachment_Serveur_RPC oldAttachment_serveur_rpc = attachment_serveur_rpc;
+		attachment_serveur_rpc = newAttachment_serveur_rpc;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, Client_serveurPackage.ROLE_REQUIS_RPC_SERVEUR__ATTACHEMENT_SERVEUR_RPC, oldAttachement_serveur_rpc, newAttachement_serveur_rpc);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, Client_serveurPackage.ROLE_REQUIS_RPC_SERVEUR__ATTACHMENT_SERVEUR_RPC, oldAttachment_serveur_rpc, newAttachment_serveur_rpc);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -105,18 +105,18 @@ public class Role_Requis_RPC_ServeurImpl extends Role_RequisImpl implements Role
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAttachement_serveur_rpc(Attachement_Serveur_RPC newAttachement_serveur_rpc) {
-		if (newAttachement_serveur_rpc != attachement_serveur_rpc) {
+	public void setAttachment_serveur_rpc(Attachment_Serveur_RPC newAttachment_serveur_rpc) {
+		if (newAttachment_serveur_rpc != attachment_serveur_rpc) {
 			NotificationChain msgs = null;
-			if (attachement_serveur_rpc != null)
-				msgs = ((InternalEObject)attachement_serveur_rpc).eInverseRemove(this, Client_serveurPackage.ATTACHEMENT_SERVEUR_RPC__ROLE_REQUIS_RPC_SERVEUR, Attachement_Serveur_RPC.class, msgs);
-			if (newAttachement_serveur_rpc != null)
-				msgs = ((InternalEObject)newAttachement_serveur_rpc).eInverseAdd(this, Client_serveurPackage.ATTACHEMENT_SERVEUR_RPC__ROLE_REQUIS_RPC_SERVEUR, Attachement_Serveur_RPC.class, msgs);
-			msgs = basicSetAttachement_serveur_rpc(newAttachement_serveur_rpc, msgs);
+			if (attachment_serveur_rpc != null)
+				msgs = ((InternalEObject)attachment_serveur_rpc).eInverseRemove(this, Client_serveurPackage.ATTACHMENT_SERVEUR_RPC__ROLE_REQUIS_RPC_SERVEUR, Attachment_Serveur_RPC.class, msgs);
+			if (newAttachment_serveur_rpc != null)
+				msgs = ((InternalEObject)newAttachment_serveur_rpc).eInverseAdd(this, Client_serveurPackage.ATTACHMENT_SERVEUR_RPC__ROLE_REQUIS_RPC_SERVEUR, Attachment_Serveur_RPC.class, msgs);
+			msgs = basicSetAttachment_serveur_rpc(newAttachment_serveur_rpc, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, Client_serveurPackage.ROLE_REQUIS_RPC_SERVEUR__ATTACHEMENT_SERVEUR_RPC, newAttachement_serveur_rpc, newAttachement_serveur_rpc));
+			eNotify(new ENotificationImpl(this, Notification.SET, Client_serveurPackage.ROLE_REQUIS_RPC_SERVEUR__ATTACHMENT_SERVEUR_RPC, newAttachment_serveur_rpc, newAttachment_serveur_rpc));
 	}
 
 	/**
@@ -127,10 +127,10 @@ public class Role_Requis_RPC_ServeurImpl extends Role_RequisImpl implements Role
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case Client_serveurPackage.ROLE_REQUIS_RPC_SERVEUR__ATTACHEMENT_SERVEUR_RPC:
-				if (attachement_serveur_rpc != null)
-					msgs = ((InternalEObject)attachement_serveur_rpc).eInverseRemove(this, Client_serveurPackage.ATTACHEMENT_SERVEUR_RPC__ROLE_REQUIS_RPC_SERVEUR, Attachement_Serveur_RPC.class, msgs);
-				return basicSetAttachement_serveur_rpc((Attachement_Serveur_RPC)otherEnd, msgs);
+			case Client_serveurPackage.ROLE_REQUIS_RPC_SERVEUR__ATTACHMENT_SERVEUR_RPC:
+				if (attachment_serveur_rpc != null)
+					msgs = ((InternalEObject)attachment_serveur_rpc).eInverseRemove(this, Client_serveurPackage.ATTACHMENT_SERVEUR_RPC__ROLE_REQUIS_RPC_SERVEUR, Attachment_Serveur_RPC.class, msgs);
+				return basicSetAttachment_serveur_rpc((Attachment_Serveur_RPC)otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -143,8 +143,8 @@ public class Role_Requis_RPC_ServeurImpl extends Role_RequisImpl implements Role
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case Client_serveurPackage.ROLE_REQUIS_RPC_SERVEUR__ATTACHEMENT_SERVEUR_RPC:
-				return basicSetAttachement_serveur_rpc(null, msgs);
+			case Client_serveurPackage.ROLE_REQUIS_RPC_SERVEUR__ATTACHMENT_SERVEUR_RPC:
+				return basicSetAttachment_serveur_rpc(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -157,9 +157,9 @@ public class Role_Requis_RPC_ServeurImpl extends Role_RequisImpl implements Role
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case Client_serveurPackage.ROLE_REQUIS_RPC_SERVEUR__ATTACHEMENT_SERVEUR_RPC:
-				if (resolve) return getAttachement_serveur_rpc();
-				return basicGetAttachement_serveur_rpc();
+			case Client_serveurPackage.ROLE_REQUIS_RPC_SERVEUR__ATTACHMENT_SERVEUR_RPC:
+				if (resolve) return getAttachment_serveur_rpc();
+				return basicGetAttachment_serveur_rpc();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -172,8 +172,8 @@ public class Role_Requis_RPC_ServeurImpl extends Role_RequisImpl implements Role
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case Client_serveurPackage.ROLE_REQUIS_RPC_SERVEUR__ATTACHEMENT_SERVEUR_RPC:
-				setAttachement_serveur_rpc((Attachement_Serveur_RPC)newValue);
+			case Client_serveurPackage.ROLE_REQUIS_RPC_SERVEUR__ATTACHMENT_SERVEUR_RPC:
+				setAttachment_serveur_rpc((Attachment_Serveur_RPC)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -187,8 +187,8 @@ public class Role_Requis_RPC_ServeurImpl extends Role_RequisImpl implements Role
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case Client_serveurPackage.ROLE_REQUIS_RPC_SERVEUR__ATTACHEMENT_SERVEUR_RPC:
-				setAttachement_serveur_rpc((Attachement_Serveur_RPC)null);
+			case Client_serveurPackage.ROLE_REQUIS_RPC_SERVEUR__ATTACHMENT_SERVEUR_RPC:
+				setAttachment_serveur_rpc((Attachment_Serveur_RPC)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -202,8 +202,8 @@ public class Role_Requis_RPC_ServeurImpl extends Role_RequisImpl implements Role
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case Client_serveurPackage.ROLE_REQUIS_RPC_SERVEUR__ATTACHEMENT_SERVEUR_RPC:
-				return attachement_serveur_rpc != null;
+			case Client_serveurPackage.ROLE_REQUIS_RPC_SERVEUR__ATTACHMENT_SERVEUR_RPC:
+				return attachment_serveur_rpc != null;
 		}
 		return super.eIsSet(featureID);
 	}

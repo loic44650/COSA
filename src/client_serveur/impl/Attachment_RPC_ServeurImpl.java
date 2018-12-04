@@ -4,15 +4,17 @@ package client_serveur.impl;
 
 import client_serveur.Attachment_RPC_Serveur;
 import client_serveur.Client_serveurPackage;
-
 import client_serveur.Port_Requis_Serveur;
 import client_serveur.Role_Fourni_RPC_Serveur;
+
 import cosa.impl.AttachmentImpl;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
+
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
@@ -39,6 +41,7 @@ public class Attachment_RPC_ServeurImpl extends AttachmentImpl implements Attach
 	 * @ordered
 	 */
 	protected Role_Fourni_RPC_Serveur role_fourni_rpc_serveur;
+
 	/**
 	 * The cached value of the '{@link #getPort_requis_serveur() <em>Port requis serveur</em>}' reference.
 	 * <!-- begin-user-doc -->

@@ -85,8 +85,8 @@
         eType="#//Attachment_RPC_Serveur" eOpposite="#//Attachment_RPC_Serveur/port_requis_serveur"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Port_Fourni_Serveur" eSuperTypes="cosa.ecore#//Port_Fourni">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="attachement_serveur_rpc"
-        eType="#//Attachement_Serveur_RPC" eOpposite="#//Attachement_Serveur_RPC/port_fourni_serveur"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attachment_serveur_rpc"
+        eType="#//Attachment_Serveur_RPC" eOpposite="#//Attachment_Serveur_RPC/port_fourni_serveur"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Role_Requis_RPC_Client" eSuperTypes="cosa.ecore#//Role_Requis">
     <eStructuralFeatures xsi:type="ecore:EReference" name="attachment_client_rpc"
@@ -117,8 +117,8 @@
         eType="#//Role_Fourni_RPC_Client" eOpposite="#//Role_Fourni_RPC_Client/attachment_rpc_client"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Role_Requis_RPC_Serveur" eSuperTypes="cosa.ecore#//Role_Requis">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="attachement_serveur_rpc"
-        eType="#//Attachement_Serveur_RPC" eOpposite="#//Attachement_Serveur_RPC/role_requis_rpc_serveur"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attachment_serveur_rpc"
+        eType="#//Attachment_Serveur_RPC" eOpposite="#//Attachment_Serveur_RPC/role_requis_rpc_serveur"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Role_Fourni_RPC_Serveur" eSuperTypes="cosa.ecore#//Role_Fourni">
     <eStructuralFeatures xsi:type="ecore:EReference" name="attachment_rpc_serveur"
@@ -130,11 +130,11 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="port_requis_serveur" eType="#//Port_Requis_Serveur"
         eOpposite="#//Port_Requis_Serveur/attachment_rpc_serveur"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Attachement_Serveur_RPC" eSuperTypes="cosa.ecore#//Attachment">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="role_requis_rpc_serveur"
-        eType="#//Role_Requis_RPC_Serveur" eOpposite="#//Role_Requis_RPC_Serveur/attachement_serveur_rpc"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Attachment_Serveur_RPC" eSuperTypes="cosa.ecore#//Attachment">
     <eStructuralFeatures xsi:type="ecore:EReference" name="port_fourni_serveur" eType="#//Port_Fourni_Serveur"
-        eOpposite="#//Port_Fourni_Serveur/attachement_serveur_rpc"/>
+        eOpposite="#//Port_Fourni_Serveur/attachment_serveur_rpc"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="role_requis_rpc_serveur"
+        eType="#//Role_Requis_RPC_Serveur" eOpposite="#//Role_Requis_RPC_Serveur/attachment_serveur_rpc"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Security_Manager" eSuperTypes="cosa.ecore#//Composant">
     <eStructuralFeatures xsi:type="ecore:EReference" name="interface_security_manager"

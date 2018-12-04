@@ -261,10 +261,10 @@ public class Client_serveurSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case Client_serveurPackage.ATTACHEMENT_SERVEUR_RPC: {
-				Attachement_Serveur_RPC attachement_Serveur_RPC = (Attachement_Serveur_RPC)theEObject;
-				T result = caseAttachement_Serveur_RPC(attachement_Serveur_RPC);
-				if (result == null) result = caseAttachment(attachement_Serveur_RPC);
+			case Client_serveurPackage.ATTACHMENT_SERVEUR_RPC: {
+				Attachment_Serveur_RPC attachment_Serveur_RPC = (Attachment_Serveur_RPC)theEObject;
+				T result = caseAttachment_Serveur_RPC(attachment_Serveur_RPC);
+				if (result == null) result = caseAttachment(attachment_Serveur_RPC);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -1050,17 +1050,17 @@ public class Client_serveurSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Attachement Serveur RPC</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Attachment Serveur RPC</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Attachement Serveur RPC</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Attachment Serveur RPC</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAttachement_Serveur_RPC(Attachement_Serveur_RPC object) {
+	public T caseAttachment_Serveur_RPC(Attachment_Serveur_RPC object) {
 		return null;
 	}
 
