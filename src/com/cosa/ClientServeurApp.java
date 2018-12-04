@@ -1,7 +1,9 @@
 package com.cosa;
 
 import client_serveur.impl.Client_serveurImpl;
+import client_serveur.impl.RPCImpl;
 import client_serveur.*;
+import client_serveur.impl.ClientImpl;
 import client_serveur.impl.Client_serveurFactoryImpl;
 
 public class ClientServeurApp extends Client_serveurImpl{
@@ -13,7 +15,7 @@ public class ClientServeurApp extends Client_serveurImpl{
 		
 		//Client
 		// ClientImpl client = (ClientImpl) csf.createClient();
-		Client client = csf.createClient();
+		ClientImpl client = (ClientImpl) csf.createClient();
 		Interface_Client ic = csf.createInterface_Client();
 		Port_Fourni_Client pfc = csf.createPort_Fourni_Client();
 		Port_Requis_Client prc = csf.createPort_Requis_Client();
@@ -22,7 +24,7 @@ public class ClientServeurApp extends Client_serveurImpl{
 		client.getInterface_client().add(ic);
 		
 		//RPC
-		RPC rpc = csf.createRPC();
+		RPCImpl rpc = (RPCImpl) csf.createRPC();
 		Interface_RPC irpc = csf.createInterface_RPC();
 		Role_Fourni_RPC_Client rfrpcc = csf.createRole_Fourni_RPC_Client();
 		Role_Requis_RPC_Client rrrpcc = csf.createRole_Requis_RPC_Client();
@@ -69,7 +71,6 @@ public class ClientServeurApp extends Client_serveurImpl{
 		serveur.getInterface_serveur_comp().get(0).getPort_requis_serveur().get(0).setAttachment_rpc_serveur(arpcs);
 		rpc.getInterface_rpc().get(0).getRole_fourni_rpc_serveur().get(0).setAttachment_rpc_serveur(arpcs);
 		
-		
-	}
-	
+		client.sendRequest("HELLO WORLD!");
+	}	
 }

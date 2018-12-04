@@ -206,4 +206,10 @@ public class RoleImpl extends Interface_ConnecteurImpl implements Role {
 		return super.eIsSet(featureID);
 	}
 
+	@Override
+	public void update() {
+		attachment_conn.getRequest();
+		
+	}
+
 } //RoleImpl

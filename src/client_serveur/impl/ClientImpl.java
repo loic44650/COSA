@@ -148,5 +148,9 @@ public class ClientImpl extends ComposantImpl implements Client {
 		}
 		return super.eIsSet(featureID);
 	}
+	
+	public void sendRequest(String request) {
+		interface_client.get(0).getPort_fourni_client().get(0).getAttachment_client_rpc().setRequest(request);
+	}
 
 } //ClientImpl

@@ -382,5 +382,9 @@ public class PortImpl extends Interface_ComposantImpl implements Port {
 		}
 		return super.eIsSet(featureID);
 	}
+	
+	public void update() {
+		attachment_comp.getRequest();
+	}
 
 } //PortImpl
