@@ -9,8 +9,6 @@ import client_serveur.impl.Client_serveurFactoryImpl;
 public class ClientServeurApp extends Client_serveurImpl{
 
 	public static void main(String[] args) {
-
-		
 		Client_serveurFactoryImpl csf = (Client_serveurFactoryImpl) Client_serveurFactoryImpl.init();
 		
 		//Client
@@ -53,24 +51,47 @@ public class ClientServeurApp extends Client_serveurImpl{
 		
 		//Attachments Client-->RPC
 		Attachment_Client_RPC acrpc = csf.createAttachment_Client_RPC();
+		acrpc.setPort_fourni_client(pfc);
+		pfc.setAttachment_comp(acrpc);
+		acrpc.setRole_requis_rpc_client(rrrpcc);
+		rrrpcc.setAttachment_conn(acrpc);
 		client.getInterface_client().get(0).getPort_fourni_client().get(0).setAttachment_client_rpc(acrpc);
 		rpc.getInterface_rpc().get(0).getRole_requis_rpc_client().get(0).setAttachment_client_rpc(acrpc);
 		
 		//Attachments RPC-->Client
 		Attachment_RPC_Client arpcc = csf.createAttachment_RPC_Client();
+		arpcc.setPort_requis_client(prc);
+		prc.setAttachment_comp(arpcc);
+		arpcc.setRole_fourni_rpc_client(rfrpcc);
+		rfrpcc.setAttachment_conn(arpcc);
 		client.getInterface_client().get(0).getPort_requis_client().get(0).setAttachment_rpc_client(arpcc);
 		rpc.getInterface_rpc().get(0).getRole_fourni_rpc_client().get(0).setAttachment_rpc_client(arpcc);
 		
 		//Attachments Serveur-->RPC
 		Attachment_Serveur_RPC asrpc = csf.createAttachment_Serveur_RPC();
+		asrpc.setPort_fourni_serveur(pfs);
+		pfs.setAttachment_comp(asrpc);
+		asrpc.setRole_requis_rpc_serveur(rrrpcs);
+		rrrpcs.setAttachment_conn(asrpc);
 		serveur.getInterface_serveur_comp().get(0).getPort_fourni_serveur().get(0).setAttachment_serveur_rpc(asrpc);
 		rpc.getInterface_rpc().get(0).getRole_requis_rpc_serveur().get(0).setAttachment_serveur_rpc(asrpc);
 		
 		//Attachments RPC-->Serveur
 		Attachment_RPC_Serveur arpcs = csf.createAttachment_RPC_Serveur();
+		arpcs.setPort_requis_serveur(prs);
+		prs.setAttachment_comp(arpcs);
+		arpcs.setRole_fourni_rpc_serveur(rfrpcs);
+		rfrpcs.setAttachment_conn(arpcs);
 		serveur.getInterface_serveur_comp().get(0).getPort_requis_serveur().get(0).setAttachment_rpc_serveur(arpcs);
 		rpc.getInterface_rpc().get(0).getRole_fourni_rpc_serveur().get(0).setAttachment_rpc_serveur(arpcs);
+		//Client - Serveur
 		
-		client.sendRequest("HELLO WORLD!");
+		ClientServeur cs = new ClientServeur();
+		cs.getClient().add(client);
+		cs.getRpc().add(rpc);
+		cs.getServeur().add(serveur);
+		
+		cs.run();
+		
 	}	
 }

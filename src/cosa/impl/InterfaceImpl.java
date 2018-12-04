@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * @generated
  */
 public class InterfaceImpl extends MinimalEObjectImpl.Container implements Interface {
+	String request;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

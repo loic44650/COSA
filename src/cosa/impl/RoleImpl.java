@@ -43,6 +43,9 @@ public class RoleImpl extends Interface_ConnecteurImpl implements Role {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	
+	private String request;
+	
 	protected RoleImpl() {
 		super();
 	}
@@ -208,8 +211,11 @@ public class RoleImpl extends Interface_ConnecteurImpl implements Role {
 
 	@Override
 	public void update() {
-		attachment_conn.getRequest();
-		
+		request = attachment_conn.getRequest();
+	}
+	
+	public String getRequest() {
+		return request;
 	}
 
 } //RoleImpl
