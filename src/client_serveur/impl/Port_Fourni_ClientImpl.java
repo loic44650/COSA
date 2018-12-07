@@ -208,4 +208,8 @@ public class Port_Fourni_ClientImpl extends Port_FourniImpl implements Port_Four
 		return super.eIsSet(featureID);
 	}
 
+	public void sendRequest(String request) {
+		((Attachment_Client_RPCImpl) attachment_client_rpc).sendRequest(request);
+	}
+	
 } //Port_Fourni_ClientImpl

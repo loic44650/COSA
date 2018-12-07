@@ -150,7 +150,7 @@ public class ClientImpl extends ComposantImpl implements Client {
 	}
 	
 	public void sendRequest(String request) {
-		interface_client.get(0).getPort_fourni_client().get(0).getAttachment_client_rpc().setRequest(request);
+		((Interface_ClientImpl) interface_client.get(0)).sendRequest(request);
 	}
 
 } //ClientImpl

@@ -40,6 +40,8 @@ public class Port_Requis_ClientImpl extends Port_RequisImpl implements Port_Requ
 	 */
 	protected Attachment_RPC_Client attachment_rpc_client;
 
+	String response;
+	
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -206,6 +208,13 @@ public class Port_Requis_ClientImpl extends Port_RequisImpl implements Port_Requ
 				return attachment_rpc_client != null;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	public void sendResponse(String response) {
+		this.response = response;
+	}
+	public String getResponse() {
+		return this.response;
 	}
 
 } //Port_Requis_ClientImpl

@@ -5,9 +5,7 @@ package cosa.impl;
 import cosa.Attachment;
 import cosa.CosaPackage;
 import cosa.Port;
-import cosa.Port_Requis;
 import cosa.Role;
-import cosa.Role_Requis;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -53,7 +51,6 @@ public class AttachmentImpl extends MinimalEObjectImpl.Container implements Atta
 	 */
 	protected Port port;
 	
-	protected String request;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -299,27 +296,6 @@ public class AttachmentImpl extends MinimalEObjectImpl.Container implements Atta
 				return port != null;
 		}
 		return super.eIsSet(featureID);
-	}
-	
-	
-
-	@Override
-	public void notifyRequis() {
-		if(port instanceof Port_Requis) {
-			port.update();
-		}
-		if(role instanceof Role_Requis) {
-			role.update();
-		}
-	}
-	@Override
-	public void setRequest(String request) {
-		this.request = request;
-		notifyRequis();
-	}
-	@Override
-	public String getRequest() {
-		return request;
 	}
 
 } //AttachmentImpl

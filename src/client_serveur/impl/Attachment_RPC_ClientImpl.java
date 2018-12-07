@@ -297,4 +297,8 @@ public class Attachment_RPC_ClientImpl extends AttachmentImpl implements Attachm
 		return super.eIsSet(featureID);
 	}
 
+	public void sendResponse(String response) {
+		((Port_Requis_ClientImpl) port_requis_client).sendResponse(response);
+	}
+
 } //Attachment_RPC_ClientImpl

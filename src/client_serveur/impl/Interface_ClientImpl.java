@@ -186,4 +186,14 @@ public class Interface_ClientImpl extends MinimalEObjectImpl.Container implement
 		return super.eIsSet(featureID);
 	}
 
+	
+	public void sendRequest(String request) {
+		((Port_Fourni_ClientImpl) port_fourni_client.get(0)).sendRequest(request);
+	}
+
+	public void notif() {
+		String message = ((Port_Requis_ClientImpl) port_requis_client.get(0)).getResponse();
+		System.out.println(message);
+		
+	}
 } //Interface_ClientImpl

@@ -105,7 +105,5 @@ public interface Port extends Interface_Composant {
 	 * @generated
 	 */
 	void setBinding_comp(Binding value);
-	
-	void update();
 
 } // Port

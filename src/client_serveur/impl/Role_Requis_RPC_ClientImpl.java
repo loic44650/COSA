@@ -39,6 +39,8 @@ public class Role_Requis_RPC_ClientImpl extends Role_RequisImpl implements Role_
 	 * @ordered
 	 */
 	protected Attachment_Client_RPC attachment_client_rpc;
+	
+	String request;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -206,6 +208,13 @@ public class Role_Requis_RPC_ClientImpl extends Role_RequisImpl implements Role_
 				return attachment_client_rpc != null;
 		}
 		return super.eIsSet(featureID);
+	}
+	
+	public void sendRequest(String request) {
+		this.request = request;
+	}
+	public String getRequest() {
+		return this.request;
 	}
 
 } //Role_Requis_RPC_ClientImpl

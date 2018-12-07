@@ -259,5 +259,15 @@ public class Interface_RPCImpl extends Interface_ConnecteurImpl implements Inter
 		}
 		return super.eIsSet(featureID);
 	}
+	
+	public void notif() {
+		// from Client to Serveur
+		String message = ((Role_Requis_RPC_ClientImpl) role_requis_rpc_client.get(0)).getRequest();
+		((Role_Fourni_RPC_ServeurImpl) role_fourni_rpc_serveur.get(0)).sendRequest(message);
+		
+		// from Serveur to Client
+		message = ((Role_Requis_RPC_ServeurImpl) role_requis_rpc_serveur.get(0)).getResponse();
+		((Role_Fourni_RPC_ClientImpl) role_fourni_rpc_client.get(0)).sendResponse(message);
+	}
 
 } //Interface_RPCImpl

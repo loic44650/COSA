@@ -16,3 +16,4 @@ Export-Package: client_serveur,
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport
 Bundle-ActivationPolicy: lazy
+Import-Package: client_serveur.impl

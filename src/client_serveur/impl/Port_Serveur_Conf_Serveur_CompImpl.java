@@ -40,6 +40,8 @@ public class Port_Serveur_Conf_Serveur_CompImpl extends PortImpl implements Port
 	 */
 	protected Binding_Serveur_Comp_Serveur_Conf binding_serveur_comp_serveur_conf;
 
+	String request;
+	
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -206,6 +208,19 @@ public class Port_Serveur_Conf_Serveur_CompImpl extends PortImpl implements Port
 				return binding_serveur_comp_serveur_conf != null;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	public void sendRequest(String request) {
+		this.request = request;
+	}
+
+	public void sendResponse(String response) {
+		((Binding_Serveur_Comp_Serveur_ConfImpl) binding_serveur_comp_serveur_conf).sendResponse(response);
+		
+	}
+
+	public String getRequest() {
+		return this.request;
 	}
 
 } //Port_Serveur_Conf_Serveur_CompImpl

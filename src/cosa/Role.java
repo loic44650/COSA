@@ -48,6 +48,4 @@ public interface Role extends Interface_Connecteur {
 	 */
 	void setAttachment_conn(Attachment value);
 
-	void update();
-
 } // Role

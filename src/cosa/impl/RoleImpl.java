@@ -44,8 +44,6 @@ public class RoleImpl extends Interface_ConnecteurImpl implements Role {
 	 * @generated
 	 */
 	
-	private String request;
-	
 	protected RoleImpl() {
 		super();
 	}
@@ -207,15 +205,6 @@ public class RoleImpl extends Interface_ConnecteurImpl implements Role {
 				return attachment_conn != null;
 		}
 		return super.eIsSet(featureID);
-	}
-
-	@Override
-	public void update() {
-		request = attachment_conn.getRequest();
-	}
-	
-	public String getRequest() {
-		return request;
 	}
 
 } //RoleImpl

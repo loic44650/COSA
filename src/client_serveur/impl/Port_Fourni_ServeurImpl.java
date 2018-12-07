@@ -208,4 +208,8 @@ public class Port_Fourni_ServeurImpl extends Port_FourniImpl implements Port_Fou
 		return super.eIsSet(featureID);
 	}
 
+	public void sendResponse(String response) {
+		((Attachment_Serveur_RPCImpl) attachment_serveur_rpc).sendResponse(response);
+	}
+
 } //Port_Fourni_ServeurImpl

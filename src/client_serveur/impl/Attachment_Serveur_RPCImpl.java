@@ -297,4 +297,9 @@ public class Attachment_Serveur_RPCImpl extends AttachmentImpl implements Attach
 		return super.eIsSet(featureID);
 	}
 
+	public void sendResponse(String response) {
+		((Role_Requis_RPC_ServeurImpl) role_requis_rpc_serveur).sendResponse(response);
+		
+	}
+
 } //Attachment_Serveur_RPCImpl

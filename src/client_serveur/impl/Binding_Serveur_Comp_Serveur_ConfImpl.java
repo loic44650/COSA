@@ -297,4 +297,13 @@ public class Binding_Serveur_Comp_Serveur_ConfImpl extends BindingImpl implement
 		return super.eIsSet(featureID);
 	}
 
+	public void sendRequest(String request) {
+		((Port_Serveur_Conf_Serveur_CompImpl) port_serveur_conf_serveur_comp).sendRequest(request);
+	}
+
+	public void sendResponse(String response) {
+		((Port_Serveur_Comp_Serveur_ComfImpl) port_serveur_comp_serveur_comf).sendResponse(response);
+		
+	}
+
 } //Binding_Serveur_Comp_Serveur_ConfImpl

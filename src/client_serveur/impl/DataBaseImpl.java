@@ -44,6 +44,8 @@ public class DataBaseImpl extends ComposantImpl implements DataBase {
 	 */
 	protected EList<Interface_DataBase> interface_database;
 
+	String value = "quarante-deux";
+	
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -147,6 +149,10 @@ public class DataBaseImpl extends ComposantImpl implements DataBase {
 				return interface_database != null && !interface_database.isEmpty();
 		}
 		return super.eIsSet(featureID);
+	}
+
+	public String getValue() {
+		return value;
 	}
 
 } //DataBaseImpl

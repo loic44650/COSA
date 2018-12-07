@@ -260,4 +260,12 @@ public class Interface_Serveur_CompImpl extends Interface_ComposantImpl implemen
 		return super.eIsSet(featureID);
 	}
 
+	public void notif() {
+		String message = ((Port_Requis_ServeurImpl) port_requis_serveur.get(0)).getRequest();
+		((Port_Serveur_Comp_Serveur_ComfImpl) port_serveur_comp_serveur_comf.get(0)).sendRequest(message);
+		
+		message = ((Port_Serveur_Comp_Serveur_ComfImpl) port_serveur_comp_serveur_comf.get(0)).getResponse();
+		((Port_Fourni_ServeurImpl) port_fourni_serveur.get(0)).sendResponse(message);
+	}
+
 } //Interface_Serveur_CompImpl

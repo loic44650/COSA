@@ -296,5 +296,9 @@ public class Attachment_Client_RPCImpl extends AttachmentImpl implements Attachm
 		}
 		return super.eIsSet(featureID);
 	}
+	
+	public void sendRequest(String request) {
+		((Role_Requis_RPC_ClientImpl) role_requis_rpc_client).sendRequest(request);
+	}
 
 } //Attachment_Client_RPCImpl

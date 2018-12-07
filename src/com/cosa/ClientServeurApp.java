@@ -1,18 +1,16 @@
 package com.cosa;
 
-import client_serveur.impl.Client_serveurImpl;
-import client_serveur.impl.RPCImpl;
+import client_serveur.impl.*;
 import client_serveur.*;
-import client_serveur.impl.ClientImpl;
-import client_serveur.impl.Client_serveurFactoryImpl;
 
-public class ClientServeurApp extends Client_serveurImpl{
+public class ClientServeurApp extends Client_serveurImpl
+{
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		Client_serveurFactoryImpl csf = (Client_serveurFactoryImpl) Client_serveurFactoryImpl.init();
 		
 		//Client
-		// ClientImpl client = (ClientImpl) csf.createClient();
 		ClientImpl client = (ClientImpl) csf.createClient();
 		Interface_Client ic = csf.createInterface_Client();
 		Port_Fourni_Client pfc = csf.createPort_Fourni_Client();
@@ -84,12 +82,34 @@ public class ClientServeurApp extends Client_serveurImpl{
 		rfrpcs.setAttachment_conn(arpcs);
 		serveur.getInterface_serveur_comp().get(0).getPort_requis_serveur().get(0).setAttachment_rpc_serveur(arpcs);
 		rpc.getInterface_rpc().get(0).getRole_fourni_rpc_serveur().get(0).setAttachment_rpc_serveur(arpcs);
-		//Client - Serveur
 		
+		// Serveur conf
+		Serveur_Conf sconf = csf.createServeur_Conf();
+		Interface_Serveur_Conf isconf = csf.createInterface_Serveur_Conf();
+		Port_Serveur_Conf_Serveur_Comp psconfs = csf.createPort_Serveur_Conf_Serveur_Comp();
+		Binding_Serveur_Comp_Serveur_Conf bssconf = csf.createBinding_Serveur_Comp_Serveur_Conf();
+		Port_Serveur_Comp_Serveur_Comf pssconf = csf.createPort_Serveur_Comp_Serveur_Comf();
+		DataBase db = csf.createDataBase();
+		
+		pssconf.setBinding_serveur_comp_serveur_conf(bssconf);
+		bssconf.setPort_serveur_comp_serveur_comf(pssconf);
+		
+		bssconf.setPort_serveur_conf_serveur_comp(psconfs);
+		psconfs.setBinding_serveur_comp_serveur_conf(bssconf);
+		
+		isconf.getPort_serveur_conf_serveur_comp().add(psconfs);
+		
+		sconf.getInterface_serveur_conf().add(isconf);
+		sconf.getDatabase().add(db);
+		
+		is.getPort_serveur_comp_serveur_comf().add(pssconf);
+		
+		//Client - Serveur
 		ClientServeur cs = new ClientServeur();
 		cs.getClient().add(client);
 		cs.getRpc().add(rpc);
 		cs.getServeur().add(serveur);
+		serveur.getServeur_conf().add(sconf);
 		
 		cs.run();
 		

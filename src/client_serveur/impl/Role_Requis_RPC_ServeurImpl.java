@@ -40,6 +40,8 @@ public class Role_Requis_RPC_ServeurImpl extends Role_RequisImpl implements Role
 	 */
 	protected Attachment_Serveur_RPC attachment_serveur_rpc;
 
+	String response;
+	
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -206,6 +208,13 @@ public class Role_Requis_RPC_ServeurImpl extends Role_RequisImpl implements Role
 				return attachment_serveur_rpc != null;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	public void sendResponse(String response) {
+		this.response = response;
+	}
+	public String getResponse() {
+		return this.response;
 	}
 
 } //Role_Requis_RPC_ServeurImpl

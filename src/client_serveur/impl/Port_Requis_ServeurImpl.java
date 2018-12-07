@@ -39,6 +39,8 @@ public class Port_Requis_ServeurImpl extends Port_RequisImpl implements Port_Req
 	 * @ordered
 	 */
 	protected Attachment_RPC_Serveur attachment_rpc_serveur;
+	
+	String request;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -206,6 +208,13 @@ public class Port_Requis_ServeurImpl extends Port_RequisImpl implements Port_Req
 				return attachment_rpc_serveur != null;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	public void sendRequest(String request) {
+		this.request = request;
+	}
+	public String getRequest() {
+		return this.request;
 	}
 
 } //Port_Requis_ServeurImpl

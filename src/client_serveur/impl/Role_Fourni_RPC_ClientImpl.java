@@ -208,4 +208,8 @@ public class Role_Fourni_RPC_ClientImpl extends Role_FourniImpl implements Role_
 		return super.eIsSet(featureID);
 	}
 
+	public void sendResponse(String response) {
+		((Attachment_RPC_ClientImpl) attachment_rpc_client).sendResponse(response);	
+	}
+
 } //Role_Fourni_RPC_ClientImpl

@@ -77,10 +77,7 @@ public interface Attachment extends EObject {
 	 * @generated
 	 */
 	void setPort(Port value);
+
 	
-	void setRequest(String request);
-	String getRequest();
-	
-	void notifyRequis();
 
 } // Attachment

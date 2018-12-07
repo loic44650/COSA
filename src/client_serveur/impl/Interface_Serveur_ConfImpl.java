@@ -43,7 +43,7 @@ public class Interface_Serveur_ConfImpl extends Interface_ComposantImpl implemen
 	 * @ordered
 	 */
 	protected EList<Port_Serveur_Conf_Serveur_Comp> port_serveur_conf_serveur_comp;
-
+	
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -147,6 +147,10 @@ public class Interface_Serveur_ConfImpl extends Interface_ComposantImpl implemen
 				return port_serveur_conf_serveur_comp != null && !port_serveur_conf_serveur_comp.isEmpty();
 		}
 		return super.eIsSet(featureID);
+	}
+	
+	public void sendResponse(String response) {
+		((Port_Serveur_Conf_Serveur_CompImpl) port_serveur_conf_serveur_comp.get(0)).sendResponse(response);
 	}
 
 } //Interface_Serveur_ConfImpl
