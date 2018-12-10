@@ -211,10 +211,13 @@ public class Port_Requis_ServeurImpl extends Port_RequisImpl implements Port_Req
 	}
 
 	public void sendRequest(String request) {
+		System.out.println("PortRequisServeur --> ");
 		this.request = request;
 	}
 	public String getRequest() {
-		return this.request;
+		String rep = this.request;
+		this.request = null;
+		return rep;
 	}
 
 } //Port_Requis_ServeurImpl

@@ -209,6 +209,7 @@ public class Port_Fourni_ClientImpl extends Port_FourniImpl implements Port_Four
 	}
 
 	public void sendRequest(String request) {
+		System.out.println("PortFourniClient --> ");
 		((Attachment_Client_RPCImpl) attachment_client_rpc).sendRequest(request);
 	}
 	

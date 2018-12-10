@@ -298,6 +298,7 @@ public class Attachment_RPC_ServeurImpl extends AttachmentImpl implements Attach
 	}
 
 	public void sendRequest(String message) {
+		System.out.println("AttachmentRPCServeur --> ");
 		((Port_Requis_ServeurImpl) port_requis_serveur).sendRequest(message);
 	}
 

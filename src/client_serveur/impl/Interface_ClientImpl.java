@@ -188,6 +188,7 @@ public class Interface_ClientImpl extends MinimalEObjectImpl.Container implement
 
 	
 	public void sendRequest(String request) {
+		System.out.println("Interface Client --> ");
 		((Port_Fourni_ClientImpl) port_fourni_client.get(0)).sendRequest(request);
 	}
 

@@ -211,6 +211,7 @@ public class Role_Requis_RPC_ServeurImpl extends Role_RequisImpl implements Role
 	}
 
 	public void sendResponse(String response) {
+		System.out.println("<-- RoleRequisRPSServeur");
 		this.response = response;
 	}
 	public String getResponse() {

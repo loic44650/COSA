@@ -298,10 +298,12 @@ public class Binding_Serveur_Comp_Serveur_ConfImpl extends BindingImpl implement
 	}
 
 	public void sendRequest(String request) {
+		System.out.println("BindingServeurCompServeurConf --> ");
 		((Port_Serveur_Conf_Serveur_CompImpl) port_serveur_conf_serveur_comp).sendRequest(request);
 	}
 
 	public void sendResponse(String response) {
+		System.out.println("<-- BindingServeurCompServeurConf");
 		((Port_Serveur_Comp_Serveur_ComfImpl) port_serveur_comp_serveur_comf).sendResponse(response);
 		
 	}

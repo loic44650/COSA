@@ -152,6 +152,7 @@ public class DataBaseImpl extends ComposantImpl implements DataBase {
 	}
 
 	public String getValue() {
+		System.out.println("Database getValue");
 		return value;
 	}
 

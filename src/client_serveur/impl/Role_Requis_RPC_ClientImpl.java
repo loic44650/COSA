@@ -211,10 +211,13 @@ public class Role_Requis_RPC_ClientImpl extends Role_RequisImpl implements Role_
 	}
 	
 	public void sendRequest(String request) {
+		System.out.println("RoleRequisRPCClient --> ");
 		this.request = request;
 	}
 	public String getRequest() {
-		return this.request;
+		String rep = this.request;
+		this.request = null;
+		return rep;
 	}
 
 } //Role_Requis_RPC_ClientImpl

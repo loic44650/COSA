@@ -21,11 +21,17 @@ public class ClientServeur extends Client_serveurImpl
 		
 		public void update() 
 		{
+			System.out.println("Notify Interface_RPCImpl");
 			((Interface_RPCImpl)((RPCImpl)this.getRpc().get(0)).getInterface_rpc().get(0)).notif();
+			System.out.println("Notify Interface_ServeurComp");
 			((Interface_Serveur_CompImpl)((Serveur_CompImpl)this.getServeur().get(0)).getInterface_serveur_comp().get(0)).notif();	
+			System.out.println("Notify Serveur_ConfImpl");
 			((Serveur_ConfImpl)((Serveur_CompImpl)this.getServeur().get(0)).getServeur_conf().get(0)).notif();
+			System.out.println("Notify Interface_Serveur_Comp");
 			((Interface_Serveur_CompImpl)((Serveur_CompImpl)this.getServeur().get(0)).getInterface_serveur_comp().get(0)).notif();
+			System.out.println("Notify Interface_RPCImpl");
 			((Interface_RPCImpl)((RPCImpl)this.getRpc().get(0)).getInterface_rpc().get(0)).notif();
+			System.out.println("Notify Interface_ClientImpl");
 			((Interface_ClientImpl)((ClientImpl)this.getClient().get(0)).getInterface_client().get(0)).notif();
 		}
 }

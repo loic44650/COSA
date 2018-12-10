@@ -298,6 +298,7 @@ public class Attachment_RPC_ClientImpl extends AttachmentImpl implements Attachm
 	}
 
 	public void sendResponse(String response) {
+		System.out.println("<-- AttachmentRPCCLient");
 		((Port_Requis_ClientImpl) port_requis_client).sendResponse(response);
 	}
 

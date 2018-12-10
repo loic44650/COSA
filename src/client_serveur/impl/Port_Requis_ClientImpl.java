@@ -211,9 +211,11 @@ public class Port_Requis_ClientImpl extends Port_RequisImpl implements Port_Requ
 	}
 
 	public void sendResponse(String response) {
+		System.out.println("<-- PortRequisClient");
 		this.response = response;
 	}
 	public String getResponse() {
+		System.out.println("<-- PortRequisClient");
 		return this.response;
 	}
 

@@ -209,6 +209,7 @@ public class Role_Fourni_RPC_ServeurImpl extends Role_FourniImpl implements Role
 	}
 
 	public void sendRequest(String message) {
+		System.out.println("RoleFourniRPCServeur --> ");
 		((Attachment_RPC_ServeurImpl) attachment_rpc_serveur).sendRequest(message);
 	}
 

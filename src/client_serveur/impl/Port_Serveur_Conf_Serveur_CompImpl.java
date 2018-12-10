@@ -211,10 +211,12 @@ public class Port_Serveur_Conf_Serveur_CompImpl extends PortImpl implements Port
 	}
 
 	public void sendRequest(String request) {
+		System.out.println("PortServeurConfServeurComp --> ");
 		this.request = request;
 	}
 
 	public void sendResponse(String response) {
+		System.out.println("<-- PortServeurConfServeurComp");
 		((Binding_Serveur_Comp_Serveur_ConfImpl) binding_serveur_comp_serveur_conf).sendResponse(response);
 		
 	}

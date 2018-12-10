@@ -150,6 +150,8 @@ public class ClientImpl extends ComposantImpl implements Client {
 	}
 	
 	public void sendRequest(String request) {
+		System.out.println(request);
+		System.out.println("Client --> ");
 		((Interface_ClientImpl) interface_client.get(0)).sendRequest(request);
 	}
 

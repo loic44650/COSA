@@ -298,6 +298,7 @@ public class Attachment_Serveur_RPCImpl extends AttachmentImpl implements Attach
 	}
 
 	public void sendResponse(String response) {
+		System.out.println("<-- AttachmentServeurRPC");
 		((Role_Requis_RPC_ServeurImpl) role_requis_rpc_serveur).sendResponse(response);
 		
 	}

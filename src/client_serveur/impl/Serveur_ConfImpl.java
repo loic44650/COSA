@@ -373,11 +373,12 @@ public class Serveur_ConfImpl extends ConfigurationImpl implements Serveur_Conf 
 
 	public void notif() {
 		String message = ((Port_Serveur_Conf_Serveur_CompImpl) interface_serveur_conf.get(0).getPort_serveur_conf_serveur_comp().get(0)).getRequest();
-		System.out.println(message);
-		sendResponse(((DataBaseImpl) database.get(0)).getValue());
+		if(message!=null)
+			sendResponse(((DataBaseImpl) database.get(0)).getValue());
 	}
 	
 	public void sendResponse(String response) {
+		System.out.println("<-- ServeurConf");
 		((Interface_Serveur_ConfImpl) interface_serveur_conf.get(0)).sendResponse(response);
 	}
 

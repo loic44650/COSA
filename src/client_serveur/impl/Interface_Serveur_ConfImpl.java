@@ -150,6 +150,7 @@ public class Interface_Serveur_ConfImpl extends Interface_ComposantImpl implemen
 	}
 	
 	public void sendResponse(String response) {
+		System.out.println("<-- InterfaceServeurConf ");
 		((Port_Serveur_Conf_Serveur_CompImpl) port_serveur_conf_serveur_comp.get(0)).sendResponse(response);
 	}
 

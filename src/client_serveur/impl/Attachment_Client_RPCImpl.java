@@ -298,6 +298,7 @@ public class Attachment_Client_RPCImpl extends AttachmentImpl implements Attachm
 	}
 	
 	public void sendRequest(String request) {
+		System.out.println("AttachmentClientRPC --> ");
 		((Role_Requis_RPC_ClientImpl) role_requis_rpc_client).sendRequest(request);
 	}
 
